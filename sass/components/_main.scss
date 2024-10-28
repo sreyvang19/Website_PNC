@@ -145,3 +145,71 @@ form{
     }
    
 }
+
+.mission{
+    background-image: url(/images/Group\ 50\ \(1\).png);
+    background-size: cover;
+    height: 120vh;
+    text-align: center;
+    h1{
+        display: none;
+    }
+    p{
+        display: none;
+    }
+}
+.history{
+    .teach{
+        display: flex;
+    }
+    .title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h1{
+            margin: 20px;
+            text-transform: uppercase;
+        }
+    }
+    .paragraph{
+        background-color: rgb(192, 192, 192);
+        padding: 15px;
+        p{
+            margin: 15px;
+            margin-bottom: 0;
+            a{
+                text-decoration: none;
+            }
+        }
+        ul {
+            list-style-type: '🔷';
+            width: 80%;
+            margin-bottom: 0;
+            margin: 40px;
+        }
+    }
+    .skill{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h2{
+            margin: 20px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        h3{
+            margin: 20px;
+        }
+        ul{
+            list-style-type:circle;
+            li{
+                margin: 10px;
+            }
+        }
+        p{
+            width: 90%;
+            margin: 10px;
+        }
+    }
+}
