@@ -1,0 +1,112 @@
+
+.img-contact{
+    height: 700px;
+}
+.main-contact{
+    display: flex;
+    flex-direction: column;
+    gap: 50x;
+    .text{
+        margin: 50px 50px 0px 50px;
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        h2{
+            text-align: center;
+        }
+    }
+    .section-contact{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        h2{
+            margin-top: 50px;
+            text-align: center;
+        }
+        .left-contact{
+            margin: 0px 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            .cards-contact{
+                display: flex;
+                gap: 30px;
+            }
+        }
+        .right-contact{
+            margin: 0px 50px;
+        }
+    }
+}
+form{
+    padding: 50px;
+    background-color: rgb(138, 216, 234);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    border-radius: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    h1{
+        text-align: center;
+    }
+    .name{
+        display: flex;
+        gap: 50px;
+        .first-name{
+            width: 50%;
+        }
+        .last-name{
+            width: 50%;
+        }
+    }
+    .pw{
+        display: flex;
+        gap: 50px;
+        .email{
+            width: 50%;
+        }
+        .password{
+            width: 50%;
+        }
+    }
+    .student{
+        display: flex;
+        gap: 50px;
+        .generate{
+            width: 50%;
+        }
+        .id{
+            width: 50%;
+        }
+    }
+    textarea{
+        width: 100%;
+        margin-top: 10px;
+        padding: 20px 0px;
+        border: none;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        border-radius: 7px;
+    }
+    input{
+        margin-top: 10px;
+        width: 100%;
+        padding: 10px 0px;
+        border-radius: 7px;
+        border: none;
+        padding-left: 10px;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    }
+    .btn{
+        width: 17%;
+        margin: 0% 43%;
+        padding: 8px 0px;
+        border: none;
+        border-radius: 7px;
+        background-color: white;
+        font-weight: bold;
+        font-size: 15px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+}
+

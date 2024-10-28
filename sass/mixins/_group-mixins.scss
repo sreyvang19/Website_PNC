@@ -1,0 +1,46 @@
+@mixin text-format {
+    display: flex;
+    gap: 15px;
+    text-decoration: none;
+    list-style: none;
+}
+@mixin formate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin nav-contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 25vh;
+    .nav-left img{
+        width: 200px;
+        margin-left: 50px;
+    }
+    .nav-right{
+        display: flex;
+        align-items: center;
+        margin-right: 50px;
+        gap: 30px;
+        font-size: 20px;
+        ul{
+            display: flex;
+            gap: 30px;
+            li{
+                list-style: none;
+                a{
+                    text-decoration: none;
+                }
+            }
+        }
+        .BTN button{
+            width: 80px;
+            height: 30px;
+            border-radius: 10px;
+            border: 0;
+            background: orange;
+        }
+    }
+   
+}
