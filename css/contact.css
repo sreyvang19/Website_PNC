@@ -1,0 +1,434 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.map {
+  display: flex;
+  gap: 50px;
+  padding: 50px;
+}
+.map iframe {
+  height: 300px;
+  width: 50%;
+}
+.map .contact {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.map .contact .contact-location {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.map .contact .contact-location .icon {
+  width: 50px;
+  height: 50px;
+}
+
+.nav-contact {
+  padding: 5px 0px;
+  position: sticky;
+  left: 30px;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 25vh;
+}
+.nav-contact .nav-left img {
+  width: 200px;
+  margin-left: 50px;
+}
+.nav-contact .nav-right {
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+  gap: 30px;
+  font-size: 20px;
+}
+.nav-contact .nav-right ul {
+  display: flex;
+  gap: 30px;
+}
+.nav-contact .nav-right ul li {
+  list-style: none;
+}
+.nav-contact .nav-right ul li a {
+  text-decoration: none;
+}
+.nav-contact .nav-right .BTN button {
+  width: 80px;
+  height: 30px;
+  border-radius: 10px;
+  border: 0;
+  background: orange;
+}
+
+.img-contact {
+  height: 700px;
+}
+
+.main-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 50x;
+}
+.main-contact .text {
+  margin: 50px 50px 0px 50px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.main-contact .text h2 {
+  text-align: center;
+}
+.main-contact .section-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.main-contact .section-contact h2 {
+  margin-top: 50px;
+  text-align: center;
+}
+.main-contact .section-contact .left-contact {
+  margin: 0px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.main-contact .section-contact .left-contact .cards-contact {
+  display: flex;
+  gap: 30px;
+}
+.main-contact .section-contact .right-contact {
+  margin: 0px 50px;
+}
+
+form {
+  padding: 50px;
+  background-color: rgb(138, 216, 234);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  border-radius: 15px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+form h1 {
+  text-align: center;
+}
+form .name {
+  display: flex;
+  gap: 50px;
+}
+form .name .first-name {
+  width: 50%;
+}
+form .name .last-name {
+  width: 50%;
+}
+form .pw {
+  display: flex;
+  gap: 50px;
+}
+form .pw .email {
+  width: 50%;
+}
+form .pw .password {
+  width: 50%;
+}
+form .student {
+  display: flex;
+  gap: 50px;
+}
+form .student .generate {
+  width: 50%;
+}
+form .student .id {
+  width: 50%;
+}
+form textarea {
+  width: 100%;
+  margin-top: 10px;
+  padding: 20px 0px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  border-radius: 7px;
+}
+form input {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px 0px;
+  border-radius: 7px;
+  border: none;
+  padding-left: 10px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+form .btn {
+  width: 17%;
+  margin: 0% 43%;
+  padding: 8px 0px;
+  border: none;
+  border-radius: 7px;
+  background-color: white;
+  font-weight: bold;
+  font-size: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.main .main-key h1 {
+  margin: 20px 0 20px 90px;
+}
+.main .main-key ul li {
+  margin: 15px 30px 0 250px;
+  font-size: 16px;
+}
+.main .main-img h3 {
+  margin: 20px 0 20px 550px;
+  font-size: 30px;
+}
+.main .main-img .img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.main .main-img .img .card img {
+  width: 300px;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+
+.card-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 30px 30px;
+  text-align: justify;
+  background-color: rgb(138, 216, 234);
+  align-items: center;
+  border-radius: 15px;
+  width: 30%;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.card-contact .img-card {
+  width: 150px;
+  height: 150px;
+  border-radius: 90px;
+}
+
+.footer-contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: end;
+  background: orange;
+}
+.footer-contact ul {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 50px 50px 50px 50px;
+  text-decoration: none;
+  list-style: none;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+.footer h1 {
+  margin: 10px 0 10px 300px;
+}
+.footer .card1 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.footer .card1 .logo img {
+  width: 200px;
+  margin: 0 50px;
+}
+
+@media (max-width: 768px) {
+  .img-contact {
+    height: 500px;
+  }
+  .nav-contact {
+    position: sticky;
+    left: 10px;
+  }
+  .nav-contact .nav-left img {
+    width: 100px;
+    margin-left: 0px;
+  }
+  .nav-contact .nav-right {
+    display: flex;
+    align-items: center;
+    margin-right: 0px;
+    gap: 10px;
+    font-size: 17px;
+  }
+  .nav-contact .nav-right ul {
+    display: flex;
+    gap: 15px;
+  }
+  .cards-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .cards-contact .card-contact {
+    display: flex;
+    flex-direction: row;
+    width: 95.5%;
+    padding: 15px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .cards-contact .card-contact .img-card {
+    width: 250px;
+    height: 295px;
+    border-radius: 15px;
+  }
+  .map {
+    display: flex;
+    padding: 50px;
+  }
+  .map iframe {
+    height: 300px;
+    width: 100%;
+  }
+  .map .contact {
+    display: none;
+  }
+}
+@media (max-width: 390px) {
+  form .name {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  form .name .first-name {
+    width: 100%;
+  }
+  form .name .last-name {
+    width: 100%;
+  }
+  form .pw {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  form .pw .email {
+    width: 100%;
+  }
+  form .pw .password {
+    width: 100%;
+  }
+  form .student {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  form .student .generate {
+    width: 100%;
+  }
+  form .student .id {
+    width: 100%;
+  }
+  form input {
+    width: 100%;
+  }
+  form .btn {
+    width: 32%;
+  }
+  .img-contact {
+    height: 400px;
+  }
+  .nav-contact {
+    position: sticky;
+    left: 10px;
+  }
+  .nav-contact .nav-left img {
+    width: 100px;
+    margin-left: 0px;
+  }
+  .nav-contact .nav-right {
+    display: flex;
+    align-items: center;
+    margin-right: 0px;
+    gap: 10px;
+    font-size: 15px;
+  }
+  .nav-contact .nav-right ul {
+    display: flex;
+    gap: 10px;
+  }
+  .nav-contact .nav-right .BTN button {
+    display: none;
+  }
+  .cards-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .cards-contact .card-contact {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+  }
+  .cards-contact .card-contact .img-card {
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+  }
+  .map {
+    display: flex;
+    padding: 50px;
+  }
+  .map iframe {
+    height: 300px;
+    width: 100%;
+  }
+  .map .contact {
+    display: none;
+  }
+  .footer-contact {
+    align-items: end;
+    background: orange;
+  }
+  .footer-contact ul {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+  }
+}/*# sourceMappingURL=contact.css.map */
