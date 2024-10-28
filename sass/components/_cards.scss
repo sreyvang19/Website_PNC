@@ -1,0 +1,17 @@
+.card-contact{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px 30px;
+    text-align: justify;
+    background-color: rgb(138, 216, 234);
+    align-items: center;
+    border-radius: 15px;
+    width: 30%;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    .img-card{
+        width: 150px;
+        height: 150px;
+        border-radius: 90px;
+    }
+}
