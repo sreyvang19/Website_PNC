@@ -302,15 +302,17 @@ body {
   }
 }
 .nav-contact {
-  width: 100%;
-  text-transform: uppercase;
-  position: sticky;
-  top: 0;
-  left: 30px;
-  background: white;
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: flex;
+  position: sticky;
+  left: 30px;
+  background: white;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
