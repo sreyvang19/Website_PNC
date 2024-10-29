@@ -1,4 +1,4 @@
-
+@import "variable";
 .img-contact{
     height: 700px;
 }
@@ -147,15 +147,9 @@ form{
 }
 
 .mission{
-    background-image: url(/images/Group\ 50\ \(1\).png);
-    background-size: cover;
-    height: 120vh;
-    text-align: center;
-    h1{
-        display: none;
-    }
-    p{
-        display: none;
+    width: 100%;
+    img{
+        width: 100%;
     }
 }
 .history{
@@ -210,6 +204,36 @@ form{
         p{
             width: 90%;
             margin: 10px;
+        }
+    }
+}
+
+.main-home{
+    width: 100%;
+    .img-home{
+        img{
+            width: 100%;
+        }
+    }
+    .text-pnc{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 30px;
+        text-align: center;
+        p{
+            width: 70%;
+            margin: 15px;
+            font-size: 19px;
+        }
+        .but-welcome-pnc{
+            background-color: $color3;
+            color: $color1;
+            padding: 15px;
+            width: 20%;
+            font-size: bold;
+            border-radius: 30px;
         }
     }
 }

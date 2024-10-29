@@ -8,6 +8,7 @@
 }
 
 body {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,105 +18,539 @@ body {
           flex-direction: column;
 }
 
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.nav {
+  width: 100%;
+  text-transform: uppercase;
   position: sticky;
   top: 0;
   bottom: 30px;
   background: white;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-header .logo {
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
-}
-header .logo img {
-  width: 30%;
-  margin: 20px;
-}
-header .link {
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 18vh;
 }
-header .link ul {
+.nav .nav-left img {
+  width: 200px;
+  margin-left: 30px;
+}
+.nav .nav-right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-right: 30px;
+  gap: 30px;
+  font-size: 20px;
 }
-header .link ul li {
+.nav .nav-right ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+.nav .nav-right ul li {
   list-style: none;
 }
-header .link ul li a {
+.nav .nav-right ul li a {
   text-decoration: none;
-  color: black;
-  font-weight: bold;
-  font-size: large;
-  padding: 24px;
-  text-transform: uppercase;
 }
-header .link ul li .active {
-  color: skyblue;
-  text-decoration: underline;
+.nav .nav-right .btn button {
+  width: 80px;
+  height: 30px;
+  border-radius: 10px;
+  border: 0;
+  background: orange;
 }
 
-.link {
+@media (max-width: 768px) and (min-width: 481px) {
+  body {
+    width: 100%;
+  }
+  .img-contact {
+    height: 500px;
+  }
+  .nav-contact {
+    position: sticky;
+    left: 10px;
+  }
+  .nav-contact .nav-left img {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .nav-contact .nav-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 0px;
+    gap: 10px;
+    font-size: 17px;
+  }
+  .nav-contact .nav-right ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 15px;
+  }
+  .cards-contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+  .cards-contact .card-contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 95.5%;
+    padding: 15px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .cards-contact .card-contact .img-card {
+    width: 250px;
+    height: 295px;
+    border-radius: 15px;
+  }
+  .map {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 50px;
+  }
+  .map iframe {
+    height: 300px;
+    width: 100%;
+  }
+  .map .contact {
+    display: none;
+  }
+}
+@media (max-width: 480px) and (min-width: 320px) {
+  form .name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 40px;
+  }
+  form .name .first-name {
+    width: 100%;
+  }
+  form .name .last-name {
+    width: 100%;
+  }
+  form .pw {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 40px;
+  }
+  form .pw .email {
+    width: 100%;
+  }
+  form .pw .password {
+    width: 100%;
+  }
+  form .student {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 40px;
+  }
+  form .student .generate {
+    width: 100%;
+  }
+  form .student .id {
+    width: 100%;
+  }
+  form input {
+    width: 100%;
+  }
+  form .btn {
+    width: 32%;
+  }
+  .img-contact {
+    height: 400px;
+  }
+  .nav-contact {
+    position: sticky;
+    left: 10px;
+  }
+  .nav-contact .nav-left img {
+    width: 100px;
+    margin-left: 0px;
+  }
+  .nav-contact .nav-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 0px;
+    gap: 10px;
+    font-size: 15px;
+  }
+  .nav-contact .nav-right ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10px;
+  }
+  .nav-contact .nav-right .BTN button {
+    display: none;
+  }
+  .cards-contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+  .cards-contact .card-contact {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 15px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .cards-contact .card-contact .img-card {
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+  }
+  .map {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 50px;
+  }
+  .map iframe {
+    height: 300px;
+    width: 100%;
+  }
+  .map .contact {
+    display: none;
+  }
+  .footer-contact {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    background: orange;
+  }
+  .footer-contact ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 3px;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+  }
+}
+.nav-contact {
+  width: 100%;
+  text-transform: uppercase;
+  position: sticky;
+  top: 0;
+  left: 30px;
+  background: white;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 15vh;
+}
+.nav-contact .nav-left img {
+  width: 200px;
+  margin-left: 50px;
+}
+.nav-contact .nav-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 50px;
+  gap: 30px;
+  font-size: 20px;
+}
+.nav-contact .nav-right ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+.nav-contact .nav-right ul li {
+  list-style: none;
+}
+.nav-contact .nav-right ul li a {
+  text-decoration: none;
+}
+.nav-contact .nav-right .BTN button {
+  width: 80px;
+  height: 30px;
+  border-radius: 10px;
+  border: 0;
+  background: orange;
+}
+
+.img-contact {
+  height: 700px;
+}
+
+.main-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 50x;
+}
+.main-contact .text {
+  margin: 50px 50px 0px 50px;
+  text-align: justify;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+.main-contact .text h2 {
+  text-align: center;
+}
+.main-contact .section-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 50px;
+}
+.main-contact .section-contact h2 {
+  margin-top: 50px;
+  text-align: center;
+}
+.main-contact .section-contact .left-contact {
+  margin: 0px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+.main-contact .section-contact .left-contact .cards-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+.main-contact .section-contact .right-contact {
+  margin: 0px 50px;
+}
+
+form {
+  padding: 50px;
+  background-color: rgb(138, 216, 234);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px;
+  border-radius: 15px;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+form h1 {
+  text-align: center;
+}
+form .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
+}
+form .name .first-name {
+  width: 50%;
+}
+form .name .last-name {
+  width: 50%;
+}
+form .pw {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
+}
+form .pw .email {
+  width: 50%;
+}
+form .pw .password {
+  width: 50%;
+}
+form .student {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
+}
+form .student .generate {
+  width: 50%;
+}
+form .student .id {
+  width: 50%;
+}
+form textarea {
+  width: 100%;
+  margin-top: 10px;
+  padding: 20px 0px;
+  border: none;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+          box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  border-radius: 7px;
+}
+form input {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px 0px;
+  border-radius: 7px;
+  border: none;
+  padding-left: 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+          box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+form .btn {
+  width: 17%;
+  margin: 0% 43%;
+  padding: 8px 0px;
+  border: none;
+  border-radius: 7px;
+  background-color: white;
+  font-weight: bold;
+  font-size: 15px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px;
+}
+.main .main-key h1 {
+  margin: 20px 0 20px 90px;
+}
+.main .main-key ul li {
+  margin: 15px 30px 0 250px;
+  font-size: 16px;
+}
+.main .main-img h3 {
+  margin: 20px 0 20px 550px;
+  font-size: 30px;
+}
+.main .main-img .img {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
 }
-.link button {
-  background-color: rgb(221, 144, 0);
-  color: white;
-  padding: 20px;
-  border: none;
-  border-radius: 15px;
+.main .main-img .img .card img {
+  width: 300px;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
 }
 
 .mission {
-  background-image: url(/images/Group\ 50\ \(1\).png);
-  background-size: cover;
-  height: 120vh;
-  text-align: center;
+  width: 100%;
 }
-.mission h1 {
-  display: none;
-}
-.mission p {
-  display: none;
+.mission img {
+  width: 100%;
 }
 
 .history .teach {
@@ -187,6 +622,66 @@ header .link ul li .active {
 .history .skill p {
   width: 90%;
   margin: 10px;
+}
+
+.main-home {
+  width: 100%;
+}
+.main-home .img-home img {
+  width: 100%;
+}
+.main-home .text-pnc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 30px;
+  text-align: center;
+}
+.main-home .text-pnc p {
+  width: 70%;
+  margin: 15px;
+  font-size: 19px;
+}
+.main-home .text-pnc .but-welcome-pnc {
+  background-color: black;
+  color: white;
+  padding: 15px;
+  width: 20%;
+  font-size: bold;
+  border-radius: 30px;
+}
+
+.section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+.section img {
+  width: 700px;
+  background: url(/images/photo_2024-10-24_16-38-42.jpg);
+}
+.section .section-context {
+  width: 100%;
+}
+.section .section-context h1 {
+  margin: 0 0 60px 240px;
+  font-size: 30px;
+}
+.section .section-context p {
+  margin: 20px 30px 0 30px;
+  font-size: 17px;
 }
 
 .value h1 {
@@ -267,7 +762,6 @@ header .link ul li .active {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  border: 1px solid black;
   border-radius: 15px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
           box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
@@ -297,6 +791,169 @@ header .link ul li .active {
 .club .card-club .card .photo img {
   width: 75%;
   margin: 5px;
+}
+
+.section-top {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+.section-top .section-top-left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.section-top .section-top-right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: justify;
+}
+.section-top .section-top-right p {
+  font-size: 19px;
+}
+
+.section-center {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+.section-center .section-center-right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.section-center .section-center-left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+.section-center .section-center-left h2 {
+  text-align: center;
+}
+.section-center .section-center-left ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+.section-center .section-center-left ul li {
+  text-align: justify;
+  list-style: none;
+  text-decoration: none;
+  font-size: 19px;
+  margin-left: 15px;
+}
+
+.section-bottom {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 50px;
+}
+.section-bottom h2 {
+  text-transform: uppercase;
+}
+.section-bottom .section-bottom-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.section-bottom .section-bottom-top .section-bottom-top-img {
+  margin: 0px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.section-bottom .section-bottom-top .section-bottom-top-img img {
+  width: 31.5%;
+  height: 250px;
+  border-radius: 15px;
+}
+.section-bottom .section-bottom-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.section-bottom .section-bottom-bottom p {
+  margin: 0px 180px;
+  text-align: center;
+  font-size: 18px;
+}
+.section-bottom .section-bottom-bottom .section-bottom-bottom-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 15px;
+}
+.section-bottom .section-bottom-bottom .section-bottom-bottom-logo img {
+  width: 15%;
 }
 
 .footer-contact {
@@ -329,3 +986,289 @@ header .link ul li .active {
   list-style: none;
 }
 
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.footer h1 {
+  margin: 10px 0 10px 300px;
+}
+.footer .card1 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+}
+.footer .card1 .logo img {
+  width: 200px;
+  margin: 0 50px;
+}
+
+.footer-home {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  background: orange;
+}
+.footer-home ul {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  margin: 50px 50px 50px 50px;
+  text-decoration: none;
+  list-style: none;
+}
+
+@media (max-width: 768px) and (min-width: 481px) {
+  body {
+    width: 100%;
+  }
+  .img-contact {
+    height: 500px;
+  }
+  .nav-contact {
+    position: sticky;
+    left: 10px;
+  }
+  .nav-contact .nav-left img {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .nav-contact .nav-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 0px;
+    gap: 10px;
+    font-size: 17px;
+  }
+  .nav-contact .nav-right ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 15px;
+  }
+  .cards-contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+  .cards-contact .card-contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 95.5%;
+    padding: 15px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .cards-contact .card-contact .img-card {
+    width: 250px;
+    height: 295px;
+    border-radius: 15px;
+  }
+  .map {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 50px;
+  }
+  .map iframe {
+    height: 300px;
+    width: 100%;
+  }
+  .map .contact {
+    display: none;
+  }
+}
+@media (max-width: 480px) and (min-width: 320px) {
+  form .name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 40px;
+  }
+  form .name .first-name {
+    width: 100%;
+  }
+  form .name .last-name {
+    width: 100%;
+  }
+  form .pw {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 40px;
+  }
+  form .pw .email {
+    width: 100%;
+  }
+  form .pw .password {
+    width: 100%;
+  }
+  form .student {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 40px;
+  }
+  form .student .generate {
+    width: 100%;
+  }
+  form .student .id {
+    width: 100%;
+  }
+  form input {
+    width: 100%;
+  }
+  form .btn {
+    width: 32%;
+  }
+  .img-contact {
+    height: 400px;
+  }
+  .nav-contact {
+    position: sticky;
+    left: 10px;
+  }
+  .nav-contact .nav-left img {
+    width: 100px;
+    margin-left: 0px;
+  }
+  .nav-contact .nav-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 0px;
+    gap: 10px;
+    font-size: 15px;
+  }
+  .nav-contact .nav-right ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10px;
+  }
+  .nav-contact .nav-right .BTN button {
+    display: none;
+  }
+  .cards-contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+  .cards-contact .card-contact {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 15px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .cards-contact .card-contact .img-card {
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+  }
+  .map {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 50px;
+  }
+  .map iframe {
+    height: 300px;
+    width: 100%;
+  }
+  .map .contact {
+    display: none;
+  }
+  .footer-contact {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    background: orange;
+  }
+  .footer-contact ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 3px;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+  }
+}

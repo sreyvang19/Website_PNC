@@ -1,4 +1,5 @@
 .section{
+    width: 100%;
     display: flex;
     margin-top: 20px;
     img{
@@ -86,6 +87,108 @@
                     width: 75%;
                     margin: 5px;
                 }
+            }
+        }
+    }
+}
+
+.section-top{
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    .section-top-left{
+        flex: 1;
+    }
+    .section-top-right{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        text-align: justify;
+        p{
+            font-size: 19px;
+        }
+    }
+}
+
+.section-center{
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+    .section-center-right{
+        flex: 1;
+    }
+    .section-center-left{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        h2{
+            text-align: center;
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            li{
+                text-align: justify;
+                list-style: none;
+                text-decoration: none;
+                font-size: 19px;
+                margin-left: 15px;
+            }
+        }
+    }
+}
+
+.section-bottom{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    h2{
+        text-transform: uppercase;
+    }
+    .section-bottom-top{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+        .section-bottom-top-img{
+            margin: 0px 50px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 31.5%;
+                height: 250px;
+                border-radius: 15px;
+            }
+        }
+    }
+    .section-bottom-bottom{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        p{
+            margin: 0px  180px;
+            text-align: center;
+            font-size: 18px;
+        }
+        .section-bottom-bottom-logo{
+            
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            img{
+                width: 15%;
             }
         }
     }

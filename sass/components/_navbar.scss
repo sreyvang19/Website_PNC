@@ -1,7 +1,9 @@
 @import "../mixins/group-mixins";
 .nav-contact{
-    padding: 5px 0px;
+    width: 100%;
+    text-transform: uppercase;
     position: sticky;
+    top: 0;
     left: 30px;
     background: white;
     @include nav-contact;

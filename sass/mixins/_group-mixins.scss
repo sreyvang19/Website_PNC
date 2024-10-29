@@ -10,10 +10,11 @@
     align-items: center;
 }
 @mixin nav-contact{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 25vh;
+    height: 15vh;
     .nav-left img{
         width: 200px;
         margin-left: 50px;
@@ -46,6 +47,7 @@
 }
 
 @mixin nav{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
