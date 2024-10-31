@@ -6,8 +6,8 @@
 }
 
 body {
-  width: 100%;
-  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
 }
@@ -15,10 +15,9 @@ body {
 .map {
   display: flex;
   gap: 50px;
-  padding: 50px;
+  padding: 50px 50px 0px 50px;
 }
 .map iframe {
-  height: 300px;
   width: 50%;
 }
 .map .contact {
@@ -37,49 +36,61 @@ body {
   height: 50px;
 }
 
-.nav-contact {
-  display: flex;
+.nav {
   position: sticky;
   top: 0;
   bottom: 30px;
   background: white;
-  flex-direction: row;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 25vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 18vh;
 }
-.nav-contact .nav-left img {
+.nav .nav-left img {
   width: 200px;
-  margin-left: 50px;
+  margin-left: 30px;
 }
-.nav-contact .nav-right {
+.nav .nav-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  margin-right: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 30px;
   gap: 30px;
-  font-size: 20px;
 }
-.nav-contact .nav-right ul {
+.nav .nav-right ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 30px;
 }
-.nav-contact .nav-right ul li {
+.nav .nav-right ul li {
   list-style: none;
+  font-size: 23px;
 }
-.nav-contact .nav-right ul li a {
+.nav .nav-right ul li a {
   text-decoration: none;
 }
-.nav-contact .nav-right .BTN button {
-  width: 80px;
-  height: 30px;
+.nav .nav-right .btn button {
+  font-size: 23px;
+  padding: 7px 15px;
   border-radius: 10px;
   border: 0;
   background: orange;
 }
 
-.img-contact {
-  height: 700px;
+.active {
+  color: skyblue;
+  border-bottom: 1px solid skyblue;
 }
 
 .main-contact {
@@ -94,16 +105,19 @@ body {
   flex-direction: column;
   gap: 15px;
 }
-.main-contact .text h2 {
+.main-contact .text p {
+  font-size: 19px;
+}
+.main-contact .text h1 {
   text-align: center;
 }
 .main-contact .section-contact {
   display: flex;
   flex-direction: column;
   gap: 50px;
-}
-.main-contact .section-contact h2 {
   margin-top: 50px;
+}
+.main-contact .section-contact h1 {
   text-align: center;
 }
 .main-contact .section-contact .left-contact {
@@ -128,9 +142,6 @@ form {
   gap: 40px;
   border-radius: 15px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-}
-form h1 {
-  text-align: center;
 }
 form .name {
   display: flex;
@@ -179,6 +190,9 @@ form input {
   padding-left: 10px;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
+form label {
+  font-size: 19px;
+}
 form .btn {
   width: 17%;
   margin: 0% 43%;
@@ -187,8 +201,9 @@ form .btn {
   border-radius: 7px;
   background-color: white;
   font-weight: bold;
-  font-size: 15px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-size: 19px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .main {
@@ -223,16 +238,10 @@ form .btn {
 }
 
 .mission {
-  background-image: url(/images/Group\ 50\ \(1\).png);
-  background-size: cover;
-  height: 120vh;
-  text-align: center;
+  width: 100%;
 }
-.mission h1 {
-  display: none;
-}
-.mission p {
-  display: none;
+.mission img {
+  width: 100%;
 }
 
 .history .teach {
@@ -289,6 +298,40 @@ form .btn {
   margin: 10px;
 }
 
+.main-home {
+  width: 100%;
+}
+.main-home .img-home img {
+  width: 100%;
+}
+.main-home .text-pnc {
+  background-image: url(/images/PNC_GC2015-by-Helene-183.jpg);
+  width: 100%;
+  height: 85vh;
+  background-size: cover;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.main-home .text-pnc p {
+  width: 70%;
+  margin: 15px;
+  font-size: 19px;
+}
+
 .card-contact {
   display: flex;
   flex-direction: column;
@@ -306,15 +349,21 @@ form .btn {
   height: 150px;
   border-radius: 90px;
 }
+.card-contact p {
+  font-size: 19px;
+}
 
-.footer-contact {
+.footer {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-content: space-between;
   align-items: center;
   align-items: end;
   background: orange;
 }
-.footer-contact ul {
+.footer ul {
   width: 30%;
   display: flex;
   flex-direction: column;
@@ -322,27 +371,13 @@ form .btn {
   margin: 50px 50px 50px 50px;
   text-decoration: none;
   list-style: none;
-}
-
-.footer {
-  display: flex;
-  flex-direction: column;
-}
-.footer h1 {
-  margin: 10px 0 10px 300px;
-}
-.footer .card1 {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-.footer .card1 .logo img {
-  width: 200px;
-  margin: 0 50px;
+  font-size: 19px;
 }
 
 @media (max-width: 768px) and (min-width: 481px) {
+  body {
+    width: 100%;
+  }
   .img-contact {
     height: 500px;
   }
@@ -351,7 +386,7 @@ form .btn {
     left: 10px;
   }
   .nav-contact .nav-left img {
-    width: 100px;
+    width: 100%;
     margin-left: 0px;
   }
   .nav-contact .nav-right {

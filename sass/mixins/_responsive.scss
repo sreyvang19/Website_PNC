@@ -1,4 +1,7 @@
 @media (max-width:768px) and (min-width:481px){
+    body{
+        width: 100%;
+    }
     .img-contact{
         height: 500px;
     }
@@ -6,7 +9,7 @@
         position: sticky;
         left: 10px;
         .nav-left img{
-            width: 100px;
+            width: 100%;
             margin-left: 0px;
         }
         .nav-right{
@@ -52,6 +55,7 @@
         }
     }
 }
+
 @media (max-width:480px) and (min-width:320px){
     form{
         .name{

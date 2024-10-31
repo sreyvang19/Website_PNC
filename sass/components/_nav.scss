@@ -1,8 +1,0 @@
-@import "../mixins/group-mixins";
-.nav{
-    position: sticky;
-    top: 0;
-    bottom: 30px;
-    background: $color1;
-    @include nav
-}
