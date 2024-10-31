@@ -2,19 +2,15 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   font-family: sans-serif;
 }
 
 .nav {
-  width: 100%;
-  text-transform: uppercase;
   position: sticky;
   top: 0;
   bottom: 30px;
   background: white;
-  width: 100%;
+  text-transform: uppercase;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,7 +35,6 @@
           align-items: center;
   margin-right: 30px;
   gap: 30px;
-  font-size: 20px;
 }
 .nav .nav-right ul {
   display: -webkit-box;
@@ -49,324 +44,22 @@
 }
 .nav .nav-right ul li {
   list-style: none;
+  font-size: 23px;
 }
 .nav .nav-right ul li a {
   text-decoration: none;
 }
 .nav .nav-right .btn button {
-  width: 80px;
-  height: 30px;
+  font-size: 23px;
+  padding: 7px 15px;
   border-radius: 10px;
   border: 0;
   background: orange;
 }
 
-@media (max-width: 768px) and (min-width: 481px) {
-  body {
-    width: 100%;
-  }
-  .img-contact {
-    height: 500px;
-  }
-  .nav-contact {
-    position: sticky;
-    left: 10px;
-  }
-  .nav-contact .nav-left img {
-    width: 100%;
-    margin-left: 0px;
-  }
-  .nav-contact .nav-right {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-right: 0px;
-    gap: 10px;
-    font-size: 17px;
-  }
-  .nav-contact .nav-right ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 15px;
-  }
-  .cards-contact {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 30px;
-  }
-  .cards-contact .card-contact {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    width: 95.5%;
-    padding: 15px;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  .cards-contact .card-contact .img-card {
-    width: 250px;
-    height: 295px;
-    border-radius: 15px;
-  }
-  .map {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 50px;
-  }
-  .map iframe {
-    height: 300px;
-    width: 100%;
-  }
-  .map .contact {
-    display: none;
-  }
-}
-@media (max-width: 480px) and (min-width: 320px) {
-  form .name {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 40px;
-  }
-  form .name .first-name {
-    width: 100%;
-  }
-  form .name .last-name {
-    width: 100%;
-  }
-  form .pw {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 40px;
-  }
-  form .pw .email {
-    width: 100%;
-  }
-  form .pw .password {
-    width: 100%;
-  }
-  form .student {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 40px;
-  }
-  form .student .generate {
-    width: 100%;
-  }
-  form .student .id {
-    width: 100%;
-  }
-  form input {
-    width: 100%;
-  }
-  form .btn {
-    width: 32%;
-  }
-  .img-contact {
-    height: 400px;
-  }
-  .nav-contact {
-    position: sticky;
-    left: 10px;
-  }
-  .nav-contact .nav-left img {
-    width: 100px;
-    margin-left: 0px;
-  }
-  .nav-contact .nav-right {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-right: 0px;
-    gap: 10px;
-    font-size: 15px;
-  }
-  .nav-contact .nav-right ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 10px;
-  }
-  .nav-contact .nav-right .BTN button {
-    display: none;
-  }
-  .cards-contact {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 30px;
-  }
-  .cards-contact .card-contact {
-    width: 90%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 15px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .cards-contact .card-contact .img-card {
-    width: 250px;
-    height: 250px;
-    border-radius: 15px;
-  }
-  .map {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 50px;
-  }
-  .map iframe {
-    height: 300px;
-    width: 100%;
-  }
-  .map .contact {
-    display: none;
-  }
-  .footer-contact {
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: end;
-    background: orange;
-  }
-  .footer-contact ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 3px;
-    margin: 0px;
-    text-decoration: none;
-    list-style: none;
-  }
-}
-.nav-contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: sticky;
-  left: 30px;
-  background: white;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  width: 100%;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 15vh;
-}
-.nav-contact .nav-left img {
-  width: 200px;
-  margin-left: 50px;
-}
-.nav-contact .nav-right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-right: 50px;
-  gap: 30px;
-  font-size: 20px;
-}
-.nav-contact .nav-right ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
-}
-.nav-contact .nav-right ul li {
-  list-style: none;
-}
-.nav-contact .nav-right ul li a {
-  text-decoration: none;
-}
-.nav-contact .nav-right .BTN button {
-  width: 80px;
-  height: 30px;
-  border-radius: 10px;
-  border: 0;
-  background: orange;
-}
-
-.nav-right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.nav-right button {
-  background-color: rgb(221, 144, 0);
-  color: white;
-  padding: 20px;
-  border: none;
-  border-radius: 15px;
-}
-
-.img-contact {
-  height: 700px;
+.active {
+  color: skyblue;
+  border-bottom: 1px solid skyblue;
 }
 
 .main-contact {
@@ -391,7 +84,10 @@
           flex-direction: column;
   gap: 15px;
 }
-.main-contact .text h2 {
+.main-contact .text p {
+  font-size: 19px;
+}
+.main-contact .text h1 {
   text-align: center;
 }
 .main-contact .section-contact {
@@ -403,9 +99,9 @@
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 50px;
-}
-.main-contact .section-contact h2 {
   margin-top: 50px;
+}
+.main-contact .section-contact h1 {
   text-align: center;
 }
 .main-contact .section-contact .left-contact {
@@ -443,9 +139,6 @@ form {
   border-radius: 15px;
   -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
           box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-}
-form h1 {
-  text-align: center;
 }
 form .name {
   display: -webkit-box;
@@ -502,6 +195,9 @@ form input {
   -webkit-box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
           box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
+form label {
+  font-size: 19px;
+}
 form .btn {
   width: 17%;
   margin: 0% 43%;
@@ -510,7 +206,7 @@ form .btn {
   border-radius: 7px;
   background-color: white;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 19px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -641,6 +337,11 @@ form .btn {
   width: 100%;
 }
 .main-home .text-pnc {
+  background-image: url(/images/PNC_GC2015-by-Helene-183.jpg);
+  width: 100%;
+  height: 85vh;
+  background-size: cover;
+  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -654,21 +355,13 @@ form .btn {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 30px;
+  margin-bottom: 50px;
   text-align: center;
 }
 .main-home .text-pnc p {
   width: 70%;
   margin: 15px;
   font-size: 19px;
-}
-.main-home .text-pnc .but-welcome-pnc {
-  background-color: black;
-  color: white;
-  padding: 15px;
-  width: 20%;
-  font-size: bold;
-  border-radius: 30px;
 }
 
 .section {
@@ -741,66 +434,50 @@ form .btn {
   margin: 10px;
 }
 
+.club {
+  width: 100%;
+}
 .club .titles {
   text-align: center;
+  margin-bottom: 30px;
 }
 .club .card-club {
+  margin: 0px 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  gap: 30px;
   width: 100%;
 }
 .club .card-club .card {
-  width: 45%;
-  height: 20vh;
+  padding: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  gap: 20px;
+  width: 45.5%;
   border-radius: 15px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
-          box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
-  margin: 10px;
+  -webkit-box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+          box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
 }
-.club .card-club .card .title {
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
-  width: 70%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+.club .card-club .card .title h3 {
   text-align: center;
-  width: 50%;
+  margin-bottom: 13px;
 }
-.club .card-club .card .photo {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  width: 30%;
+.club .card-club .card .title p {
+  text-align: justify;
+  font-size: 19px;
 }
 .club .card-club .card .photo img {
-  width: 75%;
-  margin: 5px;
+  width: 170px;
+  height: 130px;
+  border-radius: 7px;
 }
 
 .section-top {
@@ -814,8 +491,10 @@ form .btn {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  margin-left: 50px;
 }
 .section-top .section-top-right {
+  margin-right: 50px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -842,14 +521,16 @@ form .btn {
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 .section-center .section-center-right {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  margin-right: 50px;
 }
 .section-center .section-center-left {
+  margin-left: 50px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -930,7 +611,6 @@ form .btn {
 }
 .section-bottom .section-bottom-top .section-bottom-top-img img {
   width: 31.5%;
-  height: 250px;
   border-radius: 15px;
 }
 .section-bottom .section-bottom-bottom {
@@ -955,6 +635,7 @@ form .btn {
   font-size: 18px;
 }
 .section-bottom .section-bottom-bottom .section-bottom-bottom-logo {
+  margin: 0px 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -963,66 +644,10 @@ form .btn {
   gap: 15px;
 }
 .section-bottom .section-bottom-bottom .section-bottom-bottom-logo img {
-  width: 15%;
-}
-
-.footer-contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
-  background: orange;
-}
-.footer-contact ul {
-  width: 30%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 10px;
-  margin: 50px 50px 50px 50px;
-  text-decoration: none;
-  list-style: none;
+  width: 19%;
 }
 
 .footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.footer h1 {
-  margin: 10px 0 10px 300px;
-}
-.footer .card1 {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 20px;
-}
-.footer .card1 .logo img {
-  width: 200px;
-  margin: 0 50px;
-}
-
-.footer-home {
   margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1038,7 +663,7 @@ form .btn {
           align-items: end;
   background: orange;
 }
-.footer-home ul {
+.footer ul {
   width: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1051,4 +676,5 @@ form .btn {
   margin: 50px 50px 50px 50px;
   text-decoration: none;
   list-style: none;
+  font-size: 19px;
 }

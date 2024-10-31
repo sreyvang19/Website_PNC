@@ -1,37 +1,4 @@
-
-.footer-contact{
-    @include formate;
-    align-items: end;
-    background: orange;
-    ul{
-        width: 30%;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        margin: 50px 50px 50px 50px;
-        text-decoration: none;
-        list-style: none;
-    }
-}
 .footer{
-    display: flex;
-    flex-direction: column;
-    h1{
-        margin:  10px 0 10px 300px;
-    }
-    .card1{
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        .logo img{
-            width: 200px;
-            margin: 0 50px;
-        }
-    }
-}
-
-.footer-home{
     margin-top: 50px;
     @include formate;
     align-items: end;
@@ -44,5 +11,6 @@
         margin: 50px 50px 50px 50px;
         text-decoration: none;
         list-style: none;
+        font-size: 19px;
     }
 }

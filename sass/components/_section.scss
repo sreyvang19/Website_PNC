@@ -6,7 +6,6 @@
         width: 700px;
         background: url(/images/photo_2024-10-24_16-38-42.jpg);
     }
-    
     .section-context{
         width: 100%;
         h1{
@@ -54,38 +53,40 @@
     }
 }
 .club{
+    width: 100%;
     .titles{
         text-align: center;
+        margin-bottom: 30px;
     }
     .card-club{
+        margin: 0px 50px;
         display: flex;
-        justify-content: center;
-        align-items: center;
         flex-direction: row;
         flex-wrap: wrap;
+        gap: 30px;
         width: 100%;
         .card{
-            width: 45%;
-            height: 20vh;
+            padding: 15px;
             display: flex;
-            flex-direction: row;
+            gap: 20px;
+            width: 45.5%;
             border-radius: 15px;
-            box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
-            margin: 10px;
+            box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
             .title{
-                flex: 2;
-                width: 70%;
-                display: flex;
-                flex-direction: column;
-                text-align: center;
-                width: 50%;
+                h3{
+                    text-align: center;
+                    margin-bottom: 13px;
+                }
+                p{
+                    text-align: justify;
+                    font-size: 19px;
+                }
             }
             .photo{
-                flex: 1;
-                width: 30%;
                 img{
-                    width: 75%;
-                    margin: 5px;
+                    width: 170px;
+                    height: 130px;
+                    border-radius: 7px;
                 }
             }
         }
@@ -98,8 +99,10 @@
     gap: 30px;
     .section-top-left{
         flex: 1;
+        margin-left: 50px;
     }
     .section-top-right{
+        margin-right: 50px;
         flex: 1;
         display: flex;
         flex-direction: column;
@@ -116,11 +119,13 @@
     width: 100%;
     display: flex;
     gap: 30px;
-    margin-top: 30px;
+    margin-top: 50px;
     .section-center-right{
         flex: 1;
+        margin-right: 50px;
     }
     .section-center-left{
+        margin-left: 50px;
         flex: 1;
         display: flex;
         flex-direction: column;
@@ -166,7 +171,6 @@
             align-items: center;
             img{
                 width: 31.5%;
-                height: 250px;
                 border-radius: 15px;
             }
         }
@@ -183,12 +187,12 @@
             font-size: 18px;
         }
         .section-bottom-bottom-logo{
-            
+            margin: 0px 50px;
             display: flex;
             flex-wrap: wrap;
             gap: 15px;
             img{
-                width: 15%;
+                width: 19%;
             }
         }
     }

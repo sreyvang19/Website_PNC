@@ -1,9 +1,14 @@
 @import "../mixins/group-mixins";
-.nav-contact{
-    display: flex;
+@import "../components/variable";
+.nav{
     position: sticky;
-    left: 30px;
-    background: white;
-    flex-direction: row;
-    @include nav-contact;
+    top: 0;
+    bottom: 30px;
+    background: $color1;
+    text-transform: uppercase;
+    @include nav;
+}
+.active{
+    color: skyblue;
+    border-bottom: 1px solid skyblue;
 }

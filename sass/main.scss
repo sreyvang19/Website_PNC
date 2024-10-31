@@ -1,12 +1,9 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: sans-serif
 }
-@import "./components/nav";
 @import "./components/navbar";
-@import "./components/button";
 @import "./components/main";
 @import "./components/section";
 @import "./components/footer";
