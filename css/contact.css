@@ -6,8 +6,6 @@
 }
 
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
 }
@@ -42,15 +40,9 @@ body {
   bottom: 30px;
   background: white;
   text-transform: uppercase;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   height: 18vh;
 }
 .nav .nav-left img {
@@ -58,18 +50,12 @@ body {
   margin-left: 30px;
 }
 .nav .nav-right {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-right: 30px;
   gap: 30px;
 }
 .nav .nav-right ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 30px;
 }
@@ -90,7 +76,7 @@ body {
 
 .active {
   color: skyblue;
-  border-bottom: 1px solid skyblue;
+  border-bottom: 2px solid skyblue;
 }
 
 .main-contact {
@@ -202,8 +188,7 @@ form .btn {
   background-color: white;
   font-weight: bold;
   font-size: 19px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .main {
@@ -310,19 +295,10 @@ form .btn {
   height: 85vh;
   background-size: cover;
   color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   margin-bottom: 50px;
   text-align: center;
 }
@@ -355,8 +331,6 @@ form .btn {
 
 .footer {
   margin-top: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -374,10 +348,106 @@ form .btn {
   font-size: 19px;
 }
 
-@media (max-width: 768px) and (min-width: 481px) {
-  body {
+@media (max-width: 786px) {
+  .main-home .text-pnc {
+    width: 100%;
+    background-size: cover;
+  }
+  .main-home .text-pnc h1 {
+    font-size: 35px;
+  }
+  .main-home .text-pnc p {
+    padding-bottom: 100px;
+  }
+  .main-home .section-top {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-home .section-top .section-top-left img {
+    width: 100%;
+    right: 30px;
+  }
+  .main-home .section-top .section-top-right h2 {
+    font-size: 30px;
+  }
+  .main-home .section-top .section-top-right p {
+    padding: 0 0 0 45px;
+  }
+  .main-home .section-center {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .main-home .section-center .section-center-left h2 {
+    font-size: 30px;
+  }
+  .main-home .section-center .section-center-left ul li {
+    margin-right: 70px;
+  }
+  .main-home .section-center .section-center-right img {
+    width: 100%;
+    padding-left: 25px;
+  }
+  .main-home .section-bottom {
+    display: flex;
     width: 100%;
   }
+  .main-home .section-bottom .section-bottom-top h2 {
+    font-size: 30px;
+  }
+  .main-home .section-bottom .section-bottom-top .section-bottom-top-img {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-home .section-bottom .section-bottom-top .section-bottom-top-img img {
+    width: 48%;
+  }
+  .main-home .section-bottom .section-bottom-bottom h2 {
+    width: 65%;
+    font-size: 30px;
+    text-align: center;
+  }
+  .main-home .section-bottom .section-bottom-bottom .section-bottom-bottom-logo {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-home .section-bottom .section-bottom-bottom .section-bottom-bottom-logo img {
+    width: 20%;
+  }
+}
+@media (max-width: 481px) {
+  .nav {
+    height: 100px;
+  }
+  .nav .nav-left img {
+    width: 100px;
+  }
+  .nav .nav-right {
+    display: flex;
+    gap: 10px;
+    font-size: 10px;
+  }
+  .nav .nav-right ul {
+    display: flex;
+    gap: 10px;
+  }
+  .main-home {
+    width: 100%;
+  }
+  .main-home .text-pnc h1 {
+    font-size: 25px;
+  }
+  .main-home .text-pnc p {
+    display: none;
+  }
+}
+@media (max-width: 768px) and (min-width: 481px) {
   .img-contact {
     height: 500px;
   }

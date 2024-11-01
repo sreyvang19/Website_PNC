@@ -1,7 +1,133 @@
-@media (max-width:768px) and (min-width:481px){
-    body{
-        width: 100%;
+@media (max-width:786px){ 
+    .main-home{
+        .text-pnc{
+            width: 100%;
+            background-size: cover;
+            h1{
+                font-size: 35px;
+            }
+            p{
+                padding-bottom:100px;
+                
+            }
+        }
+        
+        .section-top{
+            display: flex;
+            flex-direction: column;
+            .section-top-left{
+                img{
+                    width: 100%;
+                    right: 30px;
+                }
+            }
+            .section-top-right{
+                h2{
+                    font-size: 30px;
+                }
+                p{
+                    padding: 0 0 0 45px;
+                }
+            }
+                 
+        }
+        .section-center{
+            display: flex;
+            flex-direction: column-reverse;
+            .section-center-left{
+                h2{
+                    font-size: 30px;
+                }
+                ul li{
+                    margin-right: 70px;
+                }
+            }
+            .section-center-right{
+                img{
+                    width: 100%;
+                    padding-left: 25px;;
+                }
+            }
+            
+        }
+        .section-bottom{
+            display: flex;
+            width: 100%;
+            .section-bottom-top{
+                h2{
+                    
+                    font-size: 30px;
+                }
+                .section-bottom-top-img{
+                    width: 100%;
+                    flex-wrap: wrap;
+                    gap: 20px; 
+                    justify-content: center;
+                    align-items: center;
+                    img{
+                        width: 48%;
+
+                    }
+
+                }
+            }
+            .section-bottom-bottom{
+                h2{
+                    width: 65%;
+                    font-size: 30px;
+                    text-align: center;
+                    
+                }
+                .section-bottom-bottom-logo{
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 10px;
+                    justify-content: center;
+                    align-items: center;
+                    img{
+                        width: 20%;
+                    }
+                }
+            }
+        }    
+    }   
+}
+
+@media (max-width:481px){
+    .nav{
+        height: 100px;        
+        .nav-left {
+            img{
+                width: 100px;
+            }
+        }
+        .nav-right{
+            display: flex;
+            gap: 10px;
+            font-size: 10px;
+            ul{
+                display: flex;
+                gap: 10px;
+            }
+        }
+        
     }
+    .main-home{
+        width: 100%;
+        .text-pnc{
+            h1{
+                font-size: 25px;
+            }
+            p{
+                display: none;
+            
+            }
+        }
+    }
+}
+@media (max-width:768px) and (min-width:481px){
+
     .img-contact{
         height: 500px;
     }
