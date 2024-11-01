@@ -166,8 +166,7 @@ form .btn {
   background-color: white;
   font-weight: bold;
   font-size: 17px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .main {
@@ -450,14 +449,9 @@ form .btn {
 }
 .section-bottom .section-bottom-bottom ul {
   list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  align-items: center;
+  flex-wrap: wrap;
   margin-left: 65px;
 }
 .section-bottom .section-bottom-bottom ul img {
@@ -488,52 +482,6 @@ form .btn {
 @media (min-width: 768px) and (max-width: 1024px) {
   body {
     width: 100%;
-  }
-  .main-home .section-bottom .section-bottom-top h2 {
-    font-size: 30px;
-  }
-  .main-home .section-bottom .section-bottom-top .section-bottom-top-img {
-    width: 100%;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-  }
-  .main-home .section-bottom .section-bottom-top .section-bottom-top-img img {
-    width: 48%;
-  }
-  .main-home .section-bottom .section-bottom-bottom h2 {
-    width: 65%;
-    font-size: 30px;
-    text-align: center;
-  }
-  .main-home .section-bottom .section-bottom-bottom .section-bottom-bottom-logo {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-  }
-  .main-home .section-bottom .section-bottom-bottom .section-bottom-bottom-logo img {
-    width: 20%;
-  }
-}
-@media (max-width: 481px) {
-  .nav {
-    height: 100px;
-  }
-  .nav .nav-left img {
-    width: 100px;
-  }
-  .nav .nav-right {
-    display: flex;
-    gap: 10px;
-    font-size: 10px;
-  }
-  .nav .nav-right ul {
-    display: flex;
-    gap: 10px;
   }
   .main-home {
     width: 100%;
@@ -566,8 +514,6 @@ form .btn {
     gap: 15px;
   }
   .nav .nav-right ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     gap: 15px;
   }
@@ -587,20 +533,15 @@ form .btn {
   }
   .cards-contact {
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     gap: 20px;
   }
   .cards-contact .card-contact {
     gap: 30px;
     width: 43%;
     padding: 15px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   .cards-contact .card-contact .img-card {
     width: 120px;
@@ -609,9 +550,6 @@ form .btn {
   }
   .cards-contact .card-contact p {
     font-size: 15px;
-  }
-  .cards-contact #none {
-    display: none;
   }
   .map {
     padding: 50px;
@@ -644,13 +582,8 @@ form .btn {
     font-size: 20px;
   }
   .main-contact {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 30x;
   }
   .main-contact .text {
@@ -658,13 +591,8 @@ form .btn {
   }
   .main-contact .section-contact {
     margin-top: 0px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 30px;
   }
   .main-contact .section-contact .left-contact {
@@ -675,21 +603,13 @@ form .btn {
   }
   form {
     padding: 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 30px;
   }
   form .name {
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 30px;
   }
   form .name .first-name {
@@ -700,10 +620,7 @@ form .btn {
   }
   form .pw {
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 30px;
   }
   form .pw .email {
@@ -714,10 +631,7 @@ form .btn {
   }
   form .student {
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 30px;
   }
   form .student .generate {
@@ -754,8 +668,6 @@ form .btn {
     gap: 10px;
   }
   .nav .nav-right ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     gap: 10px;
   }
@@ -777,8 +689,7 @@ form .btn {
   }
   .cards-contact {
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     gap: 20px;
   }
   .cards-contact .card-contact {
@@ -811,8 +722,6 @@ form .btn {
   }
   .footer .footer ul {
     font-size: 15px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     flex-direction: column;
     gap: 3px;
