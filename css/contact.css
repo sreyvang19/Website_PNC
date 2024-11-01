@@ -562,10 +562,10 @@ form .btn {
   form .btn {
     font-size: 15px;
   }
-  .footer {
+  .footer .footer {
     margin-top: 0px;
   }
-  .footer ul {
+  .footer .footer ul {
     font-size: 17px;
   }
 }
@@ -748,10 +748,10 @@ form .btn {
   .map .contact {
     display: none;
   }
-  .footer {
+  .footer .footer {
     margin-top: 0px;
   }
-  .footer ul {
+  .footer .footer ul {
     font-size: 15px;
     display: -webkit-box;
     display: -ms-flexbox;

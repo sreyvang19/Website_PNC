@@ -65,12 +65,8 @@
         }
     }
     .footer{
-        margin-top: 0px;
-        ul{
-            font-size: 17px;
-        }
+        @include footer-tablat;
     }
-    
 }
 
 @media (min-width:320px)and (max-width: 480px){
@@ -196,16 +192,6 @@
         }
     }
     .footer{
-       margin-top: 0px;
-        ul{
-            font-size: 15px;
-            display: flex;
-            flex-direction: column;
-
-            gap: 3px;
-            margin: 0px;
-            text-decoration: none;
-            list-style: none;
-        }
+       @include footer-phone;
     }
 }
