@@ -1,50 +1,3 @@
-@mixin text-format {
-    display: flex;
-    gap: 15px;
-    text-decoration: none;
-    list-style: none;
-}
-@mixin formate {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-@mixin nav-contact{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 25vh;
-    .nav-left img{
-        width: 200px;
-        margin-left: 50px;
-    }
-    .nav-right{
-        display: flex;
-        align-items: center;
-        margin-right: 50px;
-        gap: 30px;
-        font-size: 20px;
-        ul{
-            display: flex;
-            gap: 30px;
-            li{
-                list-style: none;
-                a{
-                    text-decoration: none;
-                }
-            }
-        }
-        .BTN button{
-            width: 80px;
-            height: 30px;
-            border-radius: 10px;
-            border: 0;
-            background: orange;
-        }
-    }
-   
-}
-
 @mixin nav{
     display: flex;
     justify-content: space-between;
@@ -59,23 +12,85 @@
         align-items: center;
         margin-right: 30px;
         gap: 30px;
-        font-size: 20px;
         ul{
             display: flex;
             gap: 30px;
             li{
                 list-style: none;
+                font-size: 23px;
                 a{
                     text-decoration: none;
                 }
             }
         }
         .btn button{
-            width: 80px;
-            height: 30px;
+            font-size: 23px;
+            padding: 7px 15px;
             border-radius: 10px;
             border: 0;
             background: $color2;
+        }
+    }
+   
+}
+@mixin formate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin nav-tablat{
+    height: 10vh;
+    .nav-left img{
+        width: 150px;
+        margin-left: none;
+    }
+    .nav-right{
+        margin-right: none;
+        gap: 15px;
+        ul{
+            display: flex;
+            gap: 15px;
+            li{
+                list-style: none;
+                font-size: 18px;
+                a{
+                    text-decoration: none;
+                }
+            }
+        }
+        .btn button{
+            font-size: 18px;
+            padding: 5px 10px;
+            border-radius: 7px;
+            border: 0;
+            background: $color2;
+        }
+    }
+   
+}
+@mixin nav-phone{
+    height: 7vh;
+    .nav-left img{
+        width: 100px;
+        margin-left: 0px;
+    }
+    .nav-right{
+        margin-right: 0px;
+        gap: 10px;
+        ul{
+            display: flex;
+            gap: 10px;
+            li{
+                list-style: none;
+                font-size: 13px;
+                a{
+                    text-decoration: none;
+                }
+            }
+        }
+        .btn button{
+            display: none;
         }
     }
    

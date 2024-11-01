@@ -6,8 +6,6 @@
 }
 
 body {
-  width: 100%;
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,10 +20,9 @@ body {
   display: -ms-flexbox;
   display: flex;
   gap: 50px;
-  padding: 50px;
+  padding: 50px 50px 0px 50px;
 }
 .map iframe {
-  height: 300px;
   width: 50%;
 }
 .map .contact {
@@ -53,11 +50,12 @@ body {
   height: 50px;
 }
 
-.nav-contact {
-  padding: 5px 0px;
+.nav {
   position: sticky;
-  left: 30px;
+  top: 0;
+  bottom: 30px;
   background: white;
+  text-transform: uppercase;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -67,45 +65,46 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 25vh;
+  height: 18vh;
 }
-.nav-contact .nav-left img {
+.nav .nav-left img {
   width: 200px;
-  margin-left: 50px;
+  margin-left: 30px;
 }
-.nav-contact .nav-right {
+.nav .nav-right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 50px;
+  margin-right: 30px;
   gap: 30px;
-  font-size: 20px;
 }
-.nav-contact .nav-right ul {
+.nav .nav-right ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
 }
-.nav-contact .nav-right ul li {
+.nav .nav-right ul li {
   list-style: none;
+  font-size: 23px;
 }
-.nav-contact .nav-right ul li a {
+.nav .nav-right ul li a {
   text-decoration: none;
 }
-.nav-contact .nav-right .BTN button {
-  width: 80px;
-  height: 30px;
+.nav .nav-right .btn button {
+  font-size: 23px;
+  padding: 7px 15px;
   border-radius: 10px;
   border: 0;
   background: orange;
 }
 
-.img-contact {
-  height: 700px;
+.active {
+  color: skyblue;
+  border-bottom: 1px solid skyblue;
 }
 
 .main-contact {
@@ -130,7 +129,10 @@ body {
           flex-direction: column;
   gap: 15px;
 }
-.main-contact .text h2 {
+.main-contact .text p {
+  font-size: 17px;
+}
+.main-contact .text h1 {
   text-align: center;
 }
 .main-contact .section-contact {
@@ -142,9 +144,9 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 50px;
-}
-.main-contact .section-contact h2 {
   margin-top: 50px;
+}
+.main-contact .section-contact h1 {
   text-align: center;
 }
 .main-contact .section-contact .left-contact {
@@ -182,9 +184,6 @@ form {
   border-radius: 15px;
   -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
           box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-}
-form h1 {
-  text-align: center;
 }
 form .name {
   display: -webkit-box;
@@ -241,6 +240,9 @@ form input {
   -webkit-box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
           box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
+form label {
+  font-size: 17px;
+}
 form .btn {
   width: 17%;
   margin: 0% 43%;
@@ -249,7 +251,7 @@ form .btn {
   border-radius: 7px;
   background-color: white;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 17px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -296,16 +298,10 @@ form .btn {
 }
 
 .mission {
-  background-image: url(/images/Group\ 50\ \(1\).png);
-  background-size: cover;
-  height: 120vh;
-  text-align: center;
+  width: 100%;
 }
-.mission h1 {
-  display: none;
-}
-.mission p {
-  display: none;
+.mission img {
+  width: 100%;
 }
 
 .history .teach {
@@ -379,6 +375,40 @@ form .btn {
   margin: 10px;
 }
 
+.main-home {
+  width: 100%;
+}
+.main-home .img-home img {
+  width: 100%;
+}
+.main-home .text-pnc {
+  background-image: url(/images/PNC_GC2015-by-Helene-183.jpg);
+  width: 100%;
+  height: 85vh;
+  background-size: cover;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.main-home .text-pnc p {
+  width: 70%;
+  margin: 15px;
+  font-size: 19px;
+}
+
 .card-contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -404,8 +434,12 @@ form .btn {
   height: 150px;
   border-radius: 90px;
 }
+.card-contact p {
+  font-size: 17px;
+}
 
-.footer-contact {
+.footer {
+  margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -420,7 +454,7 @@ form .btn {
           align-items: end;
   background: orange;
 }
-.footer-contact ul {
+.footer ul {
   width: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -433,99 +467,83 @@ form .btn {
   margin: 50px 50px 50px 50px;
   text-decoration: none;
   list-style: none;
+  font-size: 19px;
 }
 
-.footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.footer h1 {
-  margin: 10px 0 10px 300px;
-}
-.footer .card1 {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 20px;
-}
-.footer .card1 .logo img {
-  width: 200px;
-  margin: 0 50px;
-}
-
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    width: 100%;
+  }
   .img-contact {
     height: 500px;
   }
-  .nav-contact {
+  .nav {
     position: sticky;
-    left: 10px;
+    top: 0;
+    bottom: 15px;
+    background: white;
+    text-transform: uppercase;
+    height: 10vh;
   }
-  .nav-contact .nav-left img {
-    width: 100px;
-    margin-left: 0px;
+  .nav .nav-left img {
+    width: 150px;
+    margin-left: none;
   }
-  .nav-contact .nav-right {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-right: 0px;
-    gap: 10px;
-    font-size: 17px;
+  .nav .nav-right {
+    margin-right: none;
+    gap: 15px;
   }
-  .nav-contact .nav-right ul {
+  .nav .nav-right ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     gap: 15px;
   }
+  .nav .nav-right ul li {
+    list-style: none;
+    font-size: 18px;
+  }
+  .nav .nav-right ul li a {
+    text-decoration: none;
+  }
+  .nav .nav-right .btn button {
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 7px;
+    border: 0;
+    background: orange;
+  }
   .cards-contact {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 30px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 20px;
   }
   .cards-contact .card-contact {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    width: 95.5%;
+    gap: 30px;
+    width: 43%;
     padding: 15px;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .cards-contact .card-contact .img-card {
-    width: 250px;
-    height: 295px;
-    border-radius: 15px;
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+  }
+  .cards-contact .card-contact p {
+    font-size: 15px;
+  }
+  .cards-contact #none {
+    display: none;
   }
   .map {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     padding: 50px;
   }
   .map iframe {
@@ -535,8 +553,67 @@ form .btn {
   .map .contact {
     display: none;
   }
+  .main-contact .text p {
+    font-size: 15px;
+  }
+  form label {
+    font-size: 15px;
+  }
+  form .btn {
+    font-size: 15px;
+  }
+  .footer {
+    margin-top: 0px;
+  }
+  .footer ul {
+    font-size: 17px;
+  }
 }
-@media (max-width: 390px) {
+@media (min-width: 320px) and (max-width: 480px) {
+  h1 {
+    font-size: 20px;
+  }
+  .main-contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30x;
+  }
+  .main-contact .text {
+    margin: 30px;
+  }
+  .main-contact .section-contact {
+    margin-top: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+  .main-contact .section-contact .left-contact {
+    margin: 0px 30px;
+  }
+  .main-contact .section-contact .right-contact {
+    margin: 0px 30px;
+  }
+  form {
+    padding: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
   form .name {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -545,7 +622,7 @@ form .btn {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 40px;
+    gap: 30px;
   }
   form .name .first-name {
     width: 100%;
@@ -561,7 +638,7 @@ form .btn {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 40px;
+    gap: 30px;
   }
   form .pw .email {
     width: 100%;
@@ -577,7 +654,7 @@ form .btn {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 40px;
+    gap: 30px;
   }
   form .student .generate {
     width: 100%;
@@ -588,59 +665,63 @@ form .btn {
   form input {
     width: 100%;
   }
+  form label {
+    font-size: 13px;
+  }
   form .btn {
-    width: 32%;
+    width: 45%;
+    font-size: 13px;
+    margin: 0% 28%;
   }
-  .img-contact {
-    height: 400px;
-  }
-  .nav-contact {
+  .nav {
     position: sticky;
-    left: 10px;
+    top: 0;
+    bottom: 10px;
+    background: white;
+    text-transform: uppercase;
+    height: 7vh;
   }
-  .nav-contact .nav-left img {
+  .nav .nav-left img {
     width: 100px;
     margin-left: 0px;
   }
-  .nav-contact .nav-right {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  .nav .nav-right {
     margin-right: 0px;
     gap: 10px;
-    font-size: 15px;
   }
-  .nav-contact .nav-right ul {
+  .nav .nav-right ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     gap: 10px;
   }
-  .nav-contact .nav-right .BTN button {
+  .nav .nav-right ul li {
+    list-style: none;
+    font-size: 13px;
+  }
+  .nav .nav-right ul li a {
+    text-decoration: none;
+  }
+  .nav .nav-right .btn button {
     display: none;
+  }
+  .main-contact .text p {
+    font-size: 13px;
+  }
+  .img-contact {
+    height: 300px;
   }
   .cards-contact {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 30px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 20px;
   }
   .cards-contact .card-contact {
-    width: 90%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    gap: 30px;
+    width: 99%;
     padding: 15px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -650,15 +731,15 @@ form .btn {
             align-items: center;
   }
   .cards-contact .card-contact .img-card {
-    width: 250px;
-    height: 250px;
-    border-radius: 15px;
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+  }
+  .cards-contact #none {
+    display: none;
   }
   .map {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 50px;
+    padding: 30px;
   }
   .map iframe {
     height: 300px;
@@ -667,13 +748,11 @@ form .btn {
   .map .contact {
     display: none;
   }
-  .footer-contact {
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: end;
-    background: orange;
+  .footer {
+    margin-top: 0px;
   }
-  .footer-contact ul {
+  .footer ul {
+    font-size: 15px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
