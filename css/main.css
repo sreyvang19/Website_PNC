@@ -482,9 +482,6 @@ form .btn {
   .main-home .text-pnc h1 {
     font-size: 25px;
   }
-  .main-home .text-pnc p {
-    display: none;
-  }
 }
 @media (max-width: 768px) and (min-width: 481px) {
   .img-contact {
