@@ -98,7 +98,7 @@ body {
   gap: 15px;
 }
 .main-contact .text p {
-  font-size: 19px;
+  font-size: 17px;
 }
 .main-contact .text h1 {
   text-align: center;
@@ -209,7 +209,7 @@ form input {
           box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 form label {
-  font-size: 19px;
+  font-size: 17px;
 }
 form .btn {
   width: 17%;
@@ -219,7 +219,7 @@ form .btn {
   border-radius: 7px;
   background-color: white;
   font-weight: bold;
-  font-size: 19px;
+  font-size: 17px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -400,51 +400,12 @@ form .btn {
   font-size: 17px;
 }
 
-.value h1 {
+.value {
   text-align: center;
   margin: 30px;
-  text-transform: uppercase;
 }
-.value .cards-about {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 30px;
-  width: 100%;
-}
-.value .cards-about .card-about {
-  width: 18%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
-  border: 1px solid black;
-  border-radius: 15px;
-  margin: 10px;
-}
-.value .cards-about .card-about img {
-  width: 50%;
-  height: 50%;
-}
-.value .cards-about .card-about p {
-  width: 70%;
-  margin: 10px;
+.value img {
+  width: 40%;
 }
 
 .club {
@@ -484,8 +445,8 @@ form .btn {
   margin-bottom: 13px;
 }
 .club .card-club .card .title p {
-  text-align: justify;
-  font-size: 19px;
+  text-align: center;
+  font-size: 17px;
 }
 .club .card-club .card .photo img {
   width: 170px;
@@ -647,17 +608,22 @@ form .btn {
   text-align: center;
   font-size: 18px;
 }
-.section-bottom .section-bottom-bottom .section-bottom-bottom-logo {
-  margin: 0px 50px;
+.section-bottom .section-bottom-bottom ul {
+  list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 15px;
+  margin-left: 65px;
 }
-.section-bottom .section-bottom-bottom .section-bottom-bottom-logo img {
-  width: 19%;
+.section-bottom .section-bottom-bottom ul img {
+  width: 100%;
+  height: 35vh;
+  margin-top: 5px;
 }
 
 .footer {
@@ -692,74 +658,80 @@ form .btn {
   font-size: 19px;
 }
 
-@media (max-width: 768px) and (min-width: 481px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   body {
     width: 100%;
   }
   .img-contact {
     height: 500px;
   }
-  .nav-contact {
+  .nav {
     position: sticky;
-    left: 10px;
+    top: 0;
+    bottom: 15px;
+    background: white;
+    text-transform: uppercase;
+    height: 10vh;
   }
-  .nav-contact .nav-left img {
-    width: 100%;
-    margin-left: 0px;
+  .nav .nav-left img {
+    width: 150px;
+    margin-left: none;
   }
-  .nav-contact .nav-right {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-right: 0px;
-    gap: 10px;
-    font-size: 17px;
+  .nav .nav-right {
+    margin-right: none;
+    gap: 15px;
   }
-  .nav-contact .nav-right ul {
+  .nav .nav-right ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     gap: 15px;
   }
+  .nav .nav-right ul li {
+    list-style: none;
+    font-size: 18px;
+  }
+  .nav .nav-right ul li a {
+    text-decoration: none;
+  }
+  .nav .nav-right .btn button {
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 7px;
+    border: 0;
+    background: orange;
+  }
   .cards-contact {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 30px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 20px;
   }
   .cards-contact .card-contact {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    width: 95.5%;
+    gap: 30px;
+    width: 43%;
     padding: 15px;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .cards-contact .card-contact .img-card {
-    width: 250px;
-    height: 295px;
-    border-radius: 15px;
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+  }
+  .cards-contact .card-contact p {
+    font-size: 15px;
+  }
+  .cards-contact #none {
+    display: none;
   }
   .map {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     padding: 50px;
   }
   .map iframe {
@@ -769,8 +741,67 @@ form .btn {
   .map .contact {
     display: none;
   }
+  .main-contact .text p {
+    font-size: 15px;
+  }
+  form label {
+    font-size: 15px;
+  }
+  form .btn {
+    font-size: 15px;
+  }
+  .footer .footer {
+    margin-top: 0px;
+  }
+  .footer .footer ul {
+    font-size: 17px;
+  }
 }
-@media (max-width: 480px) and (min-width: 320px) {
+@media (min-width: 320px) and (max-width: 480px) {
+  h1 {
+    font-size: 20px;
+  }
+  .main-contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30x;
+  }
+  .main-contact .text {
+    margin: 30px;
+  }
+  .main-contact .section-contact {
+    margin-top: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+  .main-contact .section-contact .left-contact {
+    margin: 0px 30px;
+  }
+  .main-contact .section-contact .right-contact {
+    margin: 0px 30px;
+  }
+  form {
+    padding: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
   form .name {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -779,7 +810,7 @@ form .btn {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 40px;
+    gap: 30px;
   }
   form .name .first-name {
     width: 100%;
@@ -795,7 +826,7 @@ form .btn {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 40px;
+    gap: 30px;
   }
   form .pw .email {
     width: 100%;
@@ -811,7 +842,7 @@ form .btn {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 40px;
+    gap: 30px;
   }
   form .student .generate {
     width: 100%;
@@ -822,59 +853,63 @@ form .btn {
   form input {
     width: 100%;
   }
+  form label {
+    font-size: 13px;
+  }
   form .btn {
-    width: 32%;
+    width: 45%;
+    font-size: 13px;
+    margin: 0% 28%;
   }
-  .img-contact {
-    height: 400px;
-  }
-  .nav-contact {
+  .nav {
     position: sticky;
-    left: 10px;
+    top: 0;
+    bottom: 10px;
+    background: white;
+    text-transform: uppercase;
+    height: 7vh;
   }
-  .nav-contact .nav-left img {
+  .nav .nav-left img {
     width: 100px;
     margin-left: 0px;
   }
-  .nav-contact .nav-right {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  .nav .nav-right {
     margin-right: 0px;
     gap: 10px;
-    font-size: 15px;
   }
-  .nav-contact .nav-right ul {
+  .nav .nav-right ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     gap: 10px;
   }
-  .nav-contact .nav-right .BTN button {
+  .nav .nav-right ul li {
+    list-style: none;
+    font-size: 13px;
+  }
+  .nav .nav-right ul li a {
+    text-decoration: none;
+  }
+  .nav .nav-right .btn button {
     display: none;
+  }
+  .main-contact .text p {
+    font-size: 13px;
+  }
+  .img-contact {
+    height: 300px;
   }
   .cards-contact {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 30px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 20px;
   }
   .cards-contact .card-contact {
-    width: 90%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    gap: 30px;
+    width: 99%;
     padding: 15px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -884,15 +919,15 @@ form .btn {
             align-items: center;
   }
   .cards-contact .card-contact .img-card {
-    width: 250px;
-    height: 250px;
-    border-radius: 15px;
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+  }
+  .cards-contact #none {
+    display: none;
   }
   .map {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 50px;
+    padding: 30px;
   }
   .map iframe {
     height: 300px;
@@ -901,13 +936,11 @@ form .btn {
   .map .contact {
     display: none;
   }
-  .footer-contact {
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: end;
-    background: orange;
+  .footer .footer {
+    margin-top: 0px;
   }
-  .footer-contact ul {
+  .footer .footer ul {
+    font-size: 15px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
