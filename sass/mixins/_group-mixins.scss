@@ -38,3 +38,83 @@
     justify-content: space-between;
     align-items: center;
 }
+
+@mixin nav-tablat{
+    height: 10vh;
+    .nav-left img{
+        width: 150px;
+        margin-left: none;
+    }
+    .nav-right{
+        margin-right: none;
+        gap: 15px;
+        ul{
+            display: flex;
+            gap: 15px;
+            li{
+                list-style: none;
+                font-size: 18px;
+                a{
+                    text-decoration: none;
+                }
+            }
+        }
+        .btn button{
+            font-size: 18px;
+            padding: 5px 10px;
+            border-radius: 7px;
+            border: 0;
+            background: $color2;
+        }
+    }
+   
+}
+@mixin footer-tablat{
+    .footer{
+        margin-top: 0px;
+        ul{
+            font-size: 17px;
+        }
+    }
+}
+@mixin nav-phone{
+    height: 7vh;
+    .nav-left img{
+        width: 100px;
+        margin-left: 0px;
+    }
+    .nav-right{
+        margin-right: 0px;
+        gap: 10px;
+        ul{
+            display: flex;
+            gap: 10px;
+            li{
+                list-style: none;
+                font-size: 13px;
+                a{
+                    text-decoration: none;
+                }
+            }
+        }
+        .btn button{
+            display: none;
+        }
+    }
+   
+}
+@mixin footer-phone{
+    .footer{
+        margin-top: 0px;
+         ul{
+             font-size: 15px;
+             display: flex;
+             flex-direction: column;
+ 
+             gap: 3px;
+             margin: 0px;
+             text-decoration: none;
+             list-style: none;
+         }
+     }
+}
