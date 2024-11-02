@@ -105,16 +105,14 @@
 }
 @mixin footer-phone{
     .footer{
-        margin-top: 0px;
          ul{
              font-size: 15px;
              display: flex;
              flex-direction: column;
- 
              gap: 3px;
              margin: 0px;
              text-decoration: none;
              list-style: none;
          }
-     }
+    }
 }

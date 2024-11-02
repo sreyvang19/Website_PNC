@@ -6,6 +6,7 @@
 }
 
 body {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,6 +52,7 @@ body {
 }
 
 .nav {
+  width: 100%;
   position: sticky;
   top: 0;
   bottom: 30px;
@@ -304,6 +306,9 @@ form .btn {
   width: 100%;
 }
 
+.history {
+  width: 100%;
+}
 .history .teach {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -327,6 +332,7 @@ form .btn {
 .history .paragraph {
   background-color: rgb(192, 192, 192);
   padding: 15px;
+  width: 50%;
 }
 .history .paragraph p {
   margin: 15px;
@@ -439,6 +445,7 @@ form .btn {
 }
 
 .footer {
+  width: 100%;
   margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -561,6 +568,9 @@ form .btn {
   }
   form .btn {
     font-size: 15px;
+  }
+  .footer {
+    margin-top: 0px;
   }
   .footer .footer {
     margin-top: 0px;
@@ -748,8 +758,196 @@ form .btn {
   .map .contact {
     display: none;
   }
+  .footer {
+    margin-top: 0px;
+  }
+  .footer .footer ul {
+    font-size: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 3px;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .nav {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    bottom: 30px;
+    background: white;
+    text-transform: uppercase;
+    height: 10vh;
+  }
+  .nav .nav-left img {
+    width: 150px;
+    margin-left: none;
+  }
+  .nav .nav-right {
+    margin-right: none;
+    gap: 15px;
+  }
+  .nav .nav-right ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 15px;
+  }
+  .nav .nav-right ul li {
+    list-style: none;
+    font-size: 18px;
+  }
+  .nav .nav-right ul li a {
+    text-decoration: none;
+  }
+  .nav .nav-right .btn button {
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 7px;
+    border: 0;
+    background: orange;
+  }
+  .history .teach {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 50px;
+  }
+  .history .paragraph p {
+    font-size: 15px;
+  }
+  .history .paragraph ul {
+    font-size: 15px;
+  }
+  .history .skill ul li {
+    font-size: 15px;
+  }
+  .history .skill p {
+    font-size: 15px;
+  }
+  .club .card-club {
+    margin: 0px 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+  .club .card-club .card {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .club .card-club .card .title p {
+    font-size: 15px;
+  }
   .footer .footer {
     margin-top: 0px;
+  }
+  .footer .footer ul {
+    font-size: 17px;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .nav {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    bottom: 30px;
+    background: white;
+    text-transform: uppercase;
+    height: 10vh;
+  }
+  .nav .nav-left img {
+    width: 150px;
+    margin-left: none;
+  }
+  .nav .nav-right {
+    margin-right: none;
+    gap: 15px;
+  }
+  .nav .nav-right ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 15px;
+  }
+  .nav .nav-right ul li {
+    list-style: none;
+    font-size: 18px;
+  }
+  .nav .nav-right ul li a {
+    text-decoration: none;
+  }
+  .nav .nav-right .btn button {
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 7px;
+    border: 0;
+    background: orange;
+  }
+  .history .teach {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+  .history .teach .teacher img {
+    width: 100%;
+  }
+  .history .paragraph {
+    width: 100%;
+  }
+  .history .paragraph p {
+    font-size: 13px;
+  }
+  .history .paragraph ul {
+    font-size: 13px;
+  }
+  .history .skill ul li {
+    font-size: 13px;
+  }
+  .history .skill p {
+    font-size: 13px;
+  }
+  .club .card-club {
+    margin: 0px 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+  .club .card-club .card {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .club .card-club .card .title p {
+    font-size: 13px;
   }
   .footer .footer ul {
     font-size: 15px;

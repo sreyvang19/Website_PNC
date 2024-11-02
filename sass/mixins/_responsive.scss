@@ -66,6 +66,7 @@
     }
     .footer{
         @include footer-tablat;
+        margin-top: 0px;
     }
 }
 
@@ -193,5 +194,127 @@
     }
     .footer{
        @include footer-phone;
+       margin-top: 0px;
+    }
+}
+
+// About page
+@media (min-width:768px) and (max-width: 1024px){
+    .nav{
+        width: 100%;
+        position: sticky;
+        top: 0;
+        bottom: 30px;
+        background: $color1;
+        text-transform: uppercase;
+        @include nav-tablat;
+    }
+    .history{
+        .teach{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+        .paragraph{
+            p{
+                font-size: 15px;
+            }
+            ul {
+                font-size: 15px;
+            }
+        }
+        .skill{
+            ul{
+                li{
+                    font-size: 15px;
+                }
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+    }
+    .club{
+        .card-club{
+            margin: 0px 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            .card{
+                width: 100%;
+                display: flex;
+                .title{
+                    p{
+                        font-size: 15px
+                    }
+                }
+            }
+        }
+    }
+    .footer{
+        @include footer-tablat;
+    }
+}
+
+@media (min-width:320px)and (max-width: 480px){
+    .nav{
+        width: 100%;
+        position: sticky;
+        top: 0;
+        bottom: 30px;
+        background: $color1;
+        text-transform: uppercase;
+        @include nav-tablat;
+    }
+    .history{
+        .teach{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            .teacher{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .paragraph{
+            width: 100%;
+            p{
+                font-size: 13px;
+            }
+            ul {
+                font-size: 13px;
+            }
+        }
+        .skill{
+            ul{
+                li{
+                    font-size: 13px;
+                }
+            }
+            p{
+                font-size: 13px;
+            }
+        }
+    }
+    .club{
+        .card-club{
+            margin: 0px 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            .card{
+                width: 100%;
+                display: flex;
+                .title{
+                    p{
+                        font-size: 13px
+                    }
+                }
+            }
+        }
+    }
+    .footer{
+        @include footer-phone;
     }
 }
