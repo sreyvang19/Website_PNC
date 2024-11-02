@@ -208,12 +208,8 @@ form .btn {
   justify-content: center;
   align-items: center;
 }
-.history .title h1 {
-  margin: 20px;
-  text-transform: uppercase;
-}
 .history .paragraph {
-  background-color: rgb(192, 192, 192);
+  background-color: rgb(175, 209, 219);
   padding: 15px;
 }
 .history .paragraph p {
@@ -252,6 +248,10 @@ form .btn {
 .history .skill p {
   width: 90%;
   margin: 10px;
+}
+.history h1 {
+  margin: 20px;
+  text-transform: uppercase;
 }
 
 .main-home {
@@ -459,6 +459,7 @@ form .btn {
   margin: 50px 50px 50px 50px;
   text-decoration: none;
   list-style: none;
+<<<<<<< HEAD
   font-size: 19px;
 }
 
@@ -1052,3 +1053,11 @@ form .btn {
     list-style: none;
   }
 }/*# sourceMappingURL=main.css.map */
+=======
+  font-size: 13px;
+}
+.footer ul a {
+  text-decoration: none;
+  color: black;
+}
+>>>>>>> 00713cabea0a7bbc1e66f940d17ab1fb4fe64460
