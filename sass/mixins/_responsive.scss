@@ -207,3 +207,276 @@
        @include footer-phone;
     }
 }
+
+// About page
+@media (min-width:768px) and (max-width: 1024px){
+    .nav{
+        width: 100%;
+        position: sticky;
+        top: 0;
+        bottom: 30px;
+        background: $color1;
+        text-transform: uppercase;
+        @include nav-tablat;
+    }
+    .history{
+        .teach{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+        .paragraph{
+            p{
+                font-size: 15px;
+            }
+            ul {
+                font-size: 15px;
+            }
+        }
+        .skill{
+            ul{
+                li{
+                    font-size: 15px;
+                }
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+    }
+    .club{
+        .card-club{
+            margin: 0px 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            .card{
+                width: 100%;
+                display: flex;
+                .title{
+                    p{
+                        font-size: 15px
+                    }
+                }
+            }
+        }
+    }
+    .footer{
+        @include footer-tablat;
+    }
+}
+
+@media (min-width:320px)and (max-width: 480px){
+    .nav{
+        width: 100%;
+        position: sticky;
+        top: 0;
+        bottom: 30px;
+        background: $color1;
+        text-transform: uppercase;
+        @include nav-tablat;
+    }
+    .history{
+        .teach{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            .teacher{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .paragraph{
+            width: 100%;
+            p{
+                font-size: 13px;
+            }
+            ul {
+                font-size: 13px;
+            }
+        }
+        .skill{
+            ul{
+                li{
+                    font-size: 13px;
+                }
+            }
+            p{
+                font-size: 13px;
+            }
+        }
+    }
+    .club{
+        .card-club{
+            margin: 0px 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            .card{
+                width: 100%;
+                display: flex;
+                .title{
+                    p{
+                        font-size: 13px
+                    }
+                }
+            }
+        }
+    }
+    .footer{
+        @include footer-phone;
+    }
+}
+
+// Home............
+@media (min-width:768px) and (max-width: 1024px){
+    body{
+        width: 100%;
+    }
+    .img-contact{
+        height: 500px;
+    }
+    .nav{
+        position: sticky;
+        top: 0;
+        bottom: 15px;
+        background: $color1;
+        text-transform: uppercase;
+        @include nav-tablat;
+    }
+    .main-home{
+        width: 100%;
+        .text-pnc{
+            h1{
+                font-size: 20px;
+            }
+        }
+        .section-top{
+            display: flex;
+            flex-direction: column;   
+            .section-top-left{
+                margin-right: 50px;
+                img{
+                    width: 100%;
+                }
+            }
+            .section-top-right{
+                padding: 0 0 0 50px;
+            }   
+        }
+        .section-center{
+            display: flex;
+            flex-direction: column-reverse;
+            .section-center-left{
+                margin: 0 60px 0 35px;
+            }
+            .section-center-right{
+                margin-left: 50px;
+                img{
+                    width: 100%;
+                }
+            }
+
+        }
+        .section-bottom{
+            display: flex;
+            .section-bottom-top-img{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                .img{
+                    width: 48%;
+                    img{
+                        width: 100%;
+                        height: 25vh;
+                    }
+                }
+            }
+            .section-bottom-bottom{
+                display: flex;
+                .section-bottom-bottom-logo{
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 10px;
+                    justify-content: center;
+                    align-items: center;
+                    img{
+                        width: 22%;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+@media (min-width:320px)and (max-width: 480px){
+    .nav{
+        position: sticky;
+        top: 0;
+        bottom: 10px;
+        background: $color1;
+        text-transform: uppercase;
+        @include nav-phone;
+    }
+    .section-top{
+        display: flex;
+        flex-direction: column;   
+        .section-top-left{
+            margin-right: 50px;
+            img{
+                width: 100%;
+            }
+        }
+        .section-top-right{
+            padding: 0 0 0 50px;
+        }   
+    }
+    .section-center{
+        display: flex;
+        flex-direction: column-reverse;
+        .section-center-left{
+            margin: 0 60px 0 35px;
+        }
+        .section-center-right{
+            margin-left: 50px;
+            img{
+                width: 100%;
+                
+            }
+        }
+
+    }
+    .section-bottom{
+        width: 100%;
+        .section-bottom-bottom{
+            p{
+                width: 80%;
+            }
+        }
+        .section-bottom-top-img{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            .img{
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+                
+            }
+        }
+        .section-bottom-bottom-logo{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 30%;
+            }
+        }
+    }
+}
