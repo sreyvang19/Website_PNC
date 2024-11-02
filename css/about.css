@@ -480,7 +480,7 @@ form .btn {
   text-align: justify;
 }
 .section-top .section-top-right p {
-  font-size: 19px;
+  font-size: 17px;
 }
 
 .section-center {
@@ -533,7 +533,6 @@ form .btn {
 }
 
 .section-bottom {
-  margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -542,9 +541,6 @@ form .btn {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 50px;
-}
-.section-bottom h2 {
-  text-transform: uppercase;
 }
 .section-bottom .section-bottom-top {
   display: -webkit-box;
@@ -577,8 +573,12 @@ form .btn {
       -ms-flex-align: center;
           align-items: center;
 }
-.section-bottom .section-bottom-top .section-bottom-top-img img {
-  width: 31.5%;
+.section-bottom .section-bottom-top .section-bottom-top-img .img {
+  text-align: center;
+}
+.section-bottom .section-bottom-top .section-bottom-top-img .img img {
+  width: 100%;
+  height: 35vh;
   border-radius: 15px;
 }
 .section-bottom .section-bottom-bottom {
@@ -600,24 +600,19 @@ form .btn {
 .section-bottom .section-bottom-bottom p {
   margin: 0px 180px;
   text-align: center;
-  font-size: 18px;
+  font-size: 17px;
 }
-.section-bottom .section-bottom-bottom ul {
-  list-style-type: none;
+.section-bottom .section-bottom-bottom .section-bottom-bottom-logo {
+  margin: 0px 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-left: 65px;
+  gap: 15px;
 }
-.section-bottom .section-bottom-bottom ul img {
-  width: 100%;
-  height: 35vh;
-  margin-top: 5px;
+.section-bottom .section-bottom-bottom .section-bottom-bottom-logo img {
+  width: 18.9%;
 }
 
 .footer {
