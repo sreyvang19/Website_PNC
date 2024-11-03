@@ -2,13 +2,10 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   font-family: sans-serif;
 }
 
 body {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -268,7 +265,7 @@ form .btn {
 .mission {
   width: 100%;
 }
-.mission img {
+.mission .img-mission {
   width: 100%;
 }
 
@@ -321,12 +318,12 @@ form .btn {
           align-items: center;
 }
 .history .skill h2 {
-  margin: 20px;
+  text-align: center;
   text-transform: uppercase;
   text-align: center;
 }
 .history .skill h3 {
-  margin: 20px;
+  text-align: center;
 }
 .history .skill ul {
   list-style-type: circle;
@@ -335,7 +332,6 @@ form .btn {
   margin: 10px;
 }
 .history .skill p {
-  width: 90%;
   margin: 10px;
 }
 .history h1 {
@@ -404,14 +400,14 @@ form .btn {
   text-align: center;
   margin: 30px;
 }
+.value h1 {
+  margin-bottom: 15px;
+}
 .value img {
   width: 40%;
 }
 
-.club {
-  width: 100%;
-}
-.club .titles {
+.club .titles h1 {
   text-align: center;
   margin-bottom: 30px;
 }
@@ -420,33 +416,26 @@ form .btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
-  width: 100%;
 }
 .club .card-club .card {
-  padding: 15px;
+  width: 46.1%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
-  width: 45.5%;
-  border-radius: 15px;
   -webkit-box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
           box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+  border-radius: 15px;
+  padding: 15px;
 }
 .club .card-club .card .title h3 {
   text-align: center;
-  margin-bottom: 13px;
 }
 .club .card-club .card .title p {
   text-align: center;
-  font-size: 17px;
 }
 .club .card-club .card .photo img {
   width: 170px;
@@ -670,6 +659,7 @@ form .btn {
     bottom: 15px;
     background: white;
     text-transform: uppercase;
+    width: 100;
     height: 10vh;
   }
   .nav .nav-left img {
@@ -749,11 +739,12 @@ form .btn {
   form .btn {
     font-size: 15px;
   }
-  .footer .footer {
+  .footer {
     margin-top: 0px;
   }
-  .footer .footer ul {
-    font-size: 17px;
+  .footer .footer {
+    width: 100%;
+    margin-top: 0px;
   }
 }
 @media (min-width: 320px) and (max-width: 480px) {
@@ -866,6 +857,7 @@ form .btn {
     bottom: 10px;
     background: white;
     text-transform: uppercase;
+    width: 100%;
     height: 7vh;
   }
   .nav .nav-left img {
@@ -935,11 +927,243 @@ form .btn {
   .map .contact {
     display: none;
   }
+  .footer {
+    margin-top: 0px;
+  }
   .footer .footer {
+    width: 100%;
     margin-top: 0px;
   }
   .footer .footer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 3px;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    width: 100%;
+  }
+  .nav {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    bottom: 30px;
+    background: white;
+    text-transform: uppercase;
+    width: 100;
+    height: 10vh;
+  }
+  .nav .nav-left img {
+    width: 150px;
+    margin-left: none;
+  }
+  .nav .nav-right {
+    margin-right: none;
+    gap: 15px;
+  }
+  .nav .nav-right ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 15px;
+  }
+  .nav .nav-right ul li {
+    list-style: none;
+    font-size: 18px;
+  }
+  .nav .nav-right ul li a {
+    text-decoration: none;
+  }
+  .nav .nav-right .btn button {
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 7px;
+    border: 0;
+    background: orange;
+  }
+  .mission {
+    width: 100%;
+  }
+  .mission .img-mission {
+    width: 100%;
+  }
+  .history {
+    width: 100%;
+    margin: 0px 50px;
+  }
+  .history .teach {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .history .paragraph {
+    width: 80%;
+  }
+  .history .paragraph p {
     font-size: 15px;
+    margin: 0px;
+    padding: 0px;
+  }
+  .history .paragraph ul {
+    font-size: 15px;
+  }
+  .history .skill {
+    width: 80%;
+  }
+  .history .skill ul li {
+    text-align: center;
+    font-size: 15px;
+    margin: 0px;
+  }
+  .history .skill p {
+    text-align: center;
+    font-size: 15px;
+    margin: 0px;
+  }
+  .club .card-club {
+    margin: 0px 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+  .club .card-club .card {
+    width: 95.5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .club .card-club .card .title p {
+    font-size: 15px;
+  }
+  .footer {
+    margin-top: 50px;
+  }
+  .footer .footer {
+    width: 100%;
+    margin-top: 0px;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  body {
+    width: 100%;
+  }
+  .nav {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    bottom: 30px;
+    background: white;
+    text-transform: uppercase;
+    width: 100;
+    height: 10vh;
+  }
+  .nav .nav-left img {
+    width: 150px;
+    margin-left: none;
+  }
+  .nav .nav-right {
+    margin-right: none;
+    gap: 15px;
+  }
+  .nav .nav-right ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 15px;
+  }
+  .nav .nav-right ul li {
+    list-style: none;
+    font-size: 18px;
+  }
+  .nav .nav-right ul li a {
+    text-decoration: none;
+  }
+  .nav .nav-right .btn button {
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 7px;
+    border: 0;
+    background: orange;
+  }
+  .mission {
+    width: 100%;
+  }
+  .mission .img-mission {
+    width: 100%;
+  }
+  .history .teach {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+  .history .teach .teacher img {
+    width: 100%;
+  }
+  .history .paragraph {
+    width: 100%;
+  }
+  .history .paragraph p {
+    font-size: 13px;
+  }
+  .history .paragraph ul {
+    font-size: 13px;
+  }
+  .history .skill ul li {
+    font-size: 13px;
+  }
+  .history .skill p {
+    font-size: 13px;
+  }
+  .club .card-club {
+    margin: 0px 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+  .club .card-club .card {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 30px;
+  }
+  .club .card-club .card .title p {
+    font-size: 13px;
+  }
+  .footer .footer {
+    width: 100%;
+    margin-top: 0px;
+  }
+  .footer .footer ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

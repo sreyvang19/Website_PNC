@@ -148,7 +148,7 @@ form{
 
 .mission{
     width: 100%;
-    img{
+    .img-mission{
         width: 100%;
     }
 }
@@ -184,12 +184,12 @@ form{
         justify-content: center;
         align-items: center;
         h2{
-            margin: 20px;
+            text-align: center;
             text-transform: uppercase;
             text-align: center;
         }
         h3{
-            margin: 20px;
+            text-align: center;
         }
         ul{
             list-style-type:circle;
@@ -198,7 +198,6 @@ form{
             }
         }
         p{
-            width: 90%;
             margin: 10px;
         }
     }

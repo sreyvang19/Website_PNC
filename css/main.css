@@ -255,7 +255,7 @@ form .btn {
 .mission {
   width: 100%;
 }
-.mission img {
+.mission .img-mission {
   width: 100%;
 }
 
@@ -308,12 +308,12 @@ form .btn {
           align-items: center;
 }
 .history .skill h2 {
-  margin: 20px;
+  text-align: center;
   text-transform: uppercase;
   text-align: center;
 }
 .history .skill h3 {
-  margin: 20px;
+  text-align: center;
 }
 .history .skill ul {
   list-style-type: circle;
@@ -322,7 +322,6 @@ form .btn {
   margin: 10px;
 }
 .history .skill p {
-  width: 90%;
   margin: 10px;
 }
 .history h1 {
@@ -391,14 +390,14 @@ form .btn {
   text-align: center;
   margin: 30px;
 }
+.value h1 {
+  margin-bottom: 15px;
+}
 .value img {
   width: 40%;
 }
 
-.club {
-  width: 100%;
-}
-.club .titles {
+.club .titles h1 {
   text-align: center;
   margin-bottom: 30px;
 }
@@ -407,33 +406,26 @@ form .btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
-  width: 100%;
 }
 .club .card-club .card {
-  padding: 15px;
+  width: 46.1%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
-  width: 45.5%;
-  border-radius: 15px;
   -webkit-box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
           box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+  border-radius: 15px;
+  padding: 15px;
 }
 .club .card-club .card .title h3 {
   text-align: center;
-  margin-bottom: 13px;
 }
 .club .card-club .card .title p {
   text-align: center;
-  font-size: 17px;
 }
 .club .card-club .card .photo img {
   width: 170px;
