@@ -398,6 +398,7 @@ form .btn {
 .value {
   width: 100%;
   text-align: center;
+  margin: 30px;
 }
 .value h1 {
   margin-bottom: 15px;
@@ -931,6 +932,9 @@ form .btn {
   }
   .map .contact {
     display: none;
+  }
+  .footer {
+    margin-top: 0px;
   }
   .footer .footer {
     display: -webkit-box;
