@@ -4,6 +4,21 @@
     body{
         width: 100%;
     }
+    .main-home{
+        width: 100%;
+        .text-pnc{
+            h1{
+                font-size: 25px;
+            }
+            // p{
+            //     display: ;
+            
+            // }
+        }
+    }
+}
+@media (max-width:768px) and (min-width:481px){
+
     .img-contact{
         height: 500px;
     }
@@ -36,11 +51,11 @@
         }
         #none{
             display: none;
-        }
-        
+        } 
     }
     .map{
         padding: 50px;
+        padding-bottom: 0px;
         iframe{
             height: 300px;
             width: 100%;
@@ -66,7 +81,6 @@
     }
     .footer{
         @include footer-tablat;
-        margin-top: 0px;
     }
 }
 
@@ -194,7 +208,6 @@
     }
     .footer{
        @include footer-phone;
-       margin-top: 0px;
     }
 }
 
@@ -222,12 +235,16 @@
         width: 100%;
         margin: 0px 50px;
         .teach{
-            width: 100%;
             display: flex;
             flex-direction: column;
+            .teacher{
+                img{
+                    width: 86.5%;
+                }
+            }
         }
         .paragraph{
-            width: 80%;
+            width: 83%;
             p{
                 font-size: 15px;
                 margin: 0px;
@@ -238,7 +255,7 @@
             }
         }
         .skill{
-            width: 80%;
+            width: 86.5%;
 
             ul{
                 li{
@@ -254,19 +271,24 @@
             }
         }
     }
-    .club{
-        .card-club{
-            margin: 0px 50px;
+    .card-club{
+        width: 83%;
+        margin: 0px 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        .card{
             display: flex;
-            flex-direction: column;
-            gap: 30px;
-            .card{
-                width: 95.5%;
-                display: flex;
-                .title{
-                    p{
-                        font-size: 15px
-                    }
+            gap: 20px;
+            box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+            border-radius: 15px;
+            padding: 10px;
+            .title{
+                h3{
+                    text-align: center;
+                }
+                p{
+                    text-align: center;
                 }
             }
         }
@@ -291,10 +313,337 @@
         @include nav-tablat;
     }
     .mission{
-        width: 100%;
+        width: 99.5%;
         .img-mission{
-            width: 100%;
+            width: 99.5%;
         }
+    }
+    .history{
+        width: 100%;
+        margin: 0px 0px;
+        .teach{
+            width: 91%;
+            display: flex;
+            flex-direction: column;
+            gap: 0px;
+            .teacher{
+                width: 100%;
+                img{
+                    margin-left: 17px;
+                }
+            }
+        }
+        .paragraph{
+            p{
+                font-size: 13px;
+                margin: 0px;
+                padding: 0px;
+            }
+            ul {
+                font-size: 13px;
+            }
+        }
+        .skill{
+            width: 99.5%;
+
+            ul{
+                li{
+                    text-align: center;
+                    font-size: 13px;
+                    margin: 0px;
+                }
+            }
+            p{
+                text-align: center;
+                font-size: 13px;
+                margin: 0px;
+            }
+        }
+    }
+    .card-club{
+        width: 77%;
+        margin: 0px 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        .card{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+            border-radius: 15px;
+            padding: 10px;
+            .title{
+                h3{
+                    text-align: center;
+                }
+                p{
+                    text-align: center;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+    .footer{
+        margin-top: 50px;
+        @include footer-phone;
+    }
+}
+
+// Home............
+@media (min-width:768px) and (max-width: 1024px){
+    body{
+        width: 100%;
+        p{
+            font-size: 15px;
+        }
+    }
+    .img-contact{
+        height: 500px;
+    }
+    .nav{
+        position: sticky;
+        top: 0;
+        bottom: 15px;
+        background: $color1;
+        text-transform: uppercase;
+        @include nav-tablat;
+    }
+    .main-home{
+        width: 100%;
+        .text-pnc{
+            h1{
+                font-size: 20px;
+            }
+        }
+        .section-top{
+            display: flex;
+            flex-direction: column;   
+            .section-top-left{
+                margin-right: 50px;
+                img{
+                    width: 100%;
+                }
+            }
+            .section-top-right{
+                padding: 0 0 0 50px;
+            }   
+        }
+        .section-center{
+            width: 91.5%;
+            display: flex;
+            flex-direction: column-reverse;
+            .section-center-left{
+                width: 95%;
+                margin: 0px 50px;
+            }
+            .section-center-right{
+                width: 95%;
+                margin-left: 50px;
+                img{
+                    width: 100%;
+                }
+            }
+
+        }
+        .section-bottom{
+            display: flex;
+            .section-bottom-top-img{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                .img{
+                    width: 48%;
+                    img{
+                        width: 100%;
+                        height: 25vh;
+                    }
+                }
+            }
+            .section-bottom-bottom{
+                display: flex;
+                p{
+                    margin: 0px  50px;
+                    text-align: center;
+                    font-size: 15px;
+                }
+                .section-bottom-bottom-logo{
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 10px;
+                    justify-content: center;
+                    align-items: center;
+                    img{
+                        width: 22%;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+@media (min-width:320px)and (max-width: 480px){
+    body{
+        width: 100%;
+        p{
+            font-size: 13px;
+        }
+    }
+    .nav{
+        position: sticky;
+        top: 0;
+        bottom: 10px;
+        background: $color1;
+        text-transform: uppercase;
+        @include nav-phone;
+    }
+    .section-top{
+        display: flex;
+        flex-direction: column;   
+        .section-top-left{
+            width: 84%;
+            margin: 0px 30px;
+            img{
+                width: 100%;
+            }
+        }
+        .section-top-right{
+            width: 84%;
+            margin: 0px 30px;
+        }   
+    }
+    .section-center{
+        width: 88%;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column-reverse;
+        .section-center-left{
+            width: 95%;
+            margin: 0px 30px;
+        }
+        .section-center-right{
+            width: 95%;
+            margin-left: 30px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .section-bottom{
+        width: 100%;
+        .section-bottom-bottom{
+            h2{
+                margin: 0px 30px;
+                text-align: center;
+            }
+            p{
+                margin: 0px  30px;
+                text-align: center;
+                font-size: 13px;
+            }
+        }
+        .section-bottom-top-img{
+            width: 100%;
+            margin: 0px 30px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            .img{
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+                
+            }
+        }
+        .section-bottom-bottom-logo{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 30%;
+            }
+        }
+    }
+    .footer{
+        margin-top: 30px;
+        @include footer-phone;
+    }
+}
+
+// About page
+@media (min-width:768px) and (max-width: 1024px){
+    .nav{
+        width: 100%;
+        position: sticky;
+        top: 0;
+        bottom: 30px;
+        background: $color1;
+        text-transform: uppercase;
+        @include nav-tablat;
+    }
+    .history{
+        .teach{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+        .paragraph{
+            p{
+                font-size: 15px;
+            }
+            ul {
+                font-size: 15px;
+            }
+        }
+        .skill{
+            ul{
+                li{
+                    font-size: 15px;
+                }
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+    }
+    .club{
+        .card-club{
+            margin: 0px 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            .card{
+                width: 100%;
+                display: flex;
+                .title{
+                    p{
+                        font-size: 15px
+                    }
+                }
+            }
+        }
+    }
+    .footer{
+        @include footer-tablat;
+    }
+}
+
+@media (min-width:320px)and (max-width: 480px){
+    .nav{
+        width: 100%;
+        position: sticky;
+        top: 0;
+        bottom: 30px;
+        background: $color1;
+        text-transform: uppercase;
+        @include nav-tablat;
     }
     .history{
         .teach{
@@ -336,7 +685,6 @@
             .card{
                 width: 100%;
                 display: flex;
-                margin-bottom: 30px;
                 .title{
                     p{
                         font-size: 13px
