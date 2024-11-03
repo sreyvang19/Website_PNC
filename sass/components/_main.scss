@@ -149,7 +149,7 @@ form{
 
 .mission{
     width: 100%;
-    img{
+    .img-mission{
         width: 100%;
     }
 }
@@ -164,6 +164,7 @@ form{
         align-items: center;
     }
     .paragraph{
+        width: 100%;
         background-color: rgb(175, 209, 219);
         padding: 15px;
         width: 50%;
@@ -186,23 +187,25 @@ form{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        h2{
-            margin: 20px;
+        h1{
+            text-align: center;
             text-transform: uppercase;
             text-align: center;
         }
         h3{
-            margin: 20px;
+            text-align: center;
+            margin-bottom: 10px;
         }
         ul{
             list-style-type:circle;
+            margin-bottom: 10px;
             li{
                 margin: 10px;
             }
         }
         p{
-            width: 90%;
-            margin: 10px;
+            margin: 0px 50px;
+            margin-bottom: 10px;
         }
     }
     h1{

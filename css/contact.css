@@ -302,7 +302,7 @@ form .btn {
 .mission {
   width: 100%;
 }
-.mission img {
+.mission .img-mission {
   width: 100%;
 }
 
@@ -326,6 +326,7 @@ form .btn {
           align-items: center;
 }
 .history .paragraph {
+  width: 100%;
   background-color: rgb(175, 209, 219);
   padding: 15px;
   width: 50%;
@@ -358,23 +359,25 @@ form .btn {
       -ms-flex-align: center;
           align-items: center;
 }
-.history .skill h2 {
-  margin: 20px;
+.history .skill h1 {
+  text-align: center;
   text-transform: uppercase;
   text-align: center;
 }
 .history .skill h3 {
-  margin: 20px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 .history .skill ul {
   list-style-type: circle;
+  margin-bottom: 10px;
 }
 .history .skill ul li {
   margin: 10px;
 }
 .history .skill p {
-  width: 90%;
-  margin: 10px;
+  margin: 0px 50px;
+  margin-bottom: 10px;
 }
 .history h1 {
   margin: 20px;
@@ -460,9 +463,9 @@ form .btn {
       -ms-flex-align: end;
           align-items: end;
   background: orange;
+  padding: 50px;
 }
 .footer ul {
-  width: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -471,7 +474,6 @@ form .btn {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 10px;
-  margin: 50px 50px 50px 50px;
   text-decoration: none;
   list-style: none;
   font-size: 13px;
@@ -502,6 +504,7 @@ form .btn {
     bottom: 15px;
     background: white;
     text-transform: uppercase;
+    width: 100%;
     height: 10vh;
   }
   .nav .nav-left img {
@@ -559,8 +562,12 @@ form .btn {
   .cards-contact .card-contact p {
     font-size: 15px;
   }
+  .cards-contact #none {
+    display: none;
+  }
   .map {
     padding: 50px;
+    padding-bottom: 0px;
   }
   .map iframe {
     height: 300px;
@@ -582,10 +589,8 @@ form .btn {
     margin-top: 0px;
   }
   .footer .footer {
+    width: 100%;
     margin-top: 0px;
-  }
-  .footer .footer ul {
-    font-size: 17px;
   }
 }
 @media (min-width: 320px) and (max-width: 480px) {
@@ -698,6 +703,7 @@ form .btn {
     bottom: 10px;
     background: white;
     text-transform: uppercase;
+    width: 100%;
     height: 7vh;
   }
   .nav .nav-left img {
@@ -770,8 +776,20 @@ form .btn {
   .footer {
     margin-top: 0px;
   }
+  .footer .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 0px;
+    padding: 30px;
+  }
   .footer .footer ul {
-    font-size: 15px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -779,8 +797,6 @@ form .btn {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 3px;
-    margin: 0px;
     text-decoration: none;
     list-style: none;
   }
@@ -788,6 +804,290 @@ form .btn {
 @media (min-width: 768px) and (max-width: 1024px) {
   body {
     width: 100%;
+  }
+  .nav {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    bottom: 30px;
+    background: white;
+    text-transform: uppercase;
+    width: 100%;
+    height: 10vh;
+  }
+  .nav .nav-left img {
+    width: 150px;
+    margin-left: none;
+  }
+  .nav .nav-right {
+    margin-right: none;
+    gap: 15px;
+  }
+  .nav .nav-right ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 15px;
+  }
+  .nav .nav-right ul li {
+    list-style: none;
+    font-size: 18px;
+  }
+  .nav .nav-right ul li a {
+    text-decoration: none;
+  }
+  .nav .nav-right .btn button {
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 7px;
+    border: 0;
+    background: orange;
+  }
+  .mission {
+    width: 100%;
+  }
+  .mission .img-mission {
+    width: 100%;
+  }
+  .history {
+    width: 100%;
+    margin: 0px 50px;
+  }
+  .history .teach {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .history .teach .teacher img {
+    width: 86.5%;
+  }
+  .history .paragraph {
+    width: 83%;
+  }
+  .history .paragraph p {
+    font-size: 15px;
+    margin: 0px;
+    padding: 0px;
+  }
+  .history .paragraph ul {
+    font-size: 15px;
+  }
+  .history .skill {
+    width: 86.5%;
+  }
+  .history .skill ul li {
+    text-align: center;
+    font-size: 15px;
+    margin: 0px;
+  }
+  .history .skill p {
+    text-align: center;
+    font-size: 15px;
+    margin: 0px;
+  }
+  .card-club {
+    width: 83%;
+    margin: 0px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+  .card-club .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20px;
+    -webkit-box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+            box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    border-radius: 15px;
+    padding: 10px;
+  }
+  .card-club .card .title h3 {
+    text-align: center;
+  }
+  .card-club .card .title p {
+    text-align: center;
+  }
+  .footer {
+    margin-top: 50px;
+  }
+  .footer .footer {
+    width: 100%;
+    margin-top: 0px;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  body {
+    width: 100%;
+  }
+  .nav {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    bottom: 30px;
+    background: white;
+    text-transform: uppercase;
+    width: 100%;
+    height: 10vh;
+  }
+  .nav .nav-left img {
+    width: 150px;
+    margin-left: none;
+  }
+  .nav .nav-right {
+    margin-right: none;
+    gap: 15px;
+  }
+  .nav .nav-right ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 15px;
+  }
+  .nav .nav-right ul li {
+    list-style: none;
+    font-size: 18px;
+  }
+  .nav .nav-right ul li a {
+    text-decoration: none;
+  }
+  .nav .nav-right .btn button {
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 7px;
+    border: 0;
+    background: orange;
+  }
+  .mission {
+    width: 99.5%;
+  }
+  .mission .img-mission {
+    width: 99.5%;
+  }
+  .history {
+    width: 100%;
+    margin: 0px 0px;
+  }
+  .history .teach {
+    width: 91%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0px;
+  }
+  .history .teach .teacher {
+    width: 100%;
+  }
+  .history .teach .teacher img {
+    margin-left: 17px;
+  }
+  .history .paragraph p {
+    font-size: 13px;
+    margin: 0px;
+    padding: 0px;
+  }
+  .history .paragraph ul {
+    font-size: 13px;
+  }
+  .history .skill {
+    width: 99.5%;
+  }
+  .history .skill ul li {
+    text-align: center;
+    font-size: 13px;
+    margin: 0px;
+  }
+  .history .skill p {
+    text-align: center;
+    font-size: 13px;
+    margin: 0px;
+  }
+  .card-club {
+    width: 77%;
+    margin: 0px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+  .card-club .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 20px;
+    -webkit-box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+            box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    border-radius: 15px;
+    padding: 10px;
+  }
+  .card-club .card .title h3 {
+    text-align: center;
+  }
+  .card-club .card .title p {
+    text-align: center;
+    font-size: 13px;
+  }
+  .footer {
+    margin-top: 50px;
+  }
+  .footer .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 0px;
+    padding: 30px;
+  }
+  .footer .footer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-decoration: none;
+    list-style: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    width: 100%;
+  }
+  body p {
+    font-size: 15px;
   }
   .img-contact {
     height: 500px;
@@ -798,6 +1098,7 @@ form .btn {
     bottom: 15px;
     background: white;
     text-transform: uppercase;
+    width: 100%;
     height: 10vh;
   }
   .nav .nav-left img {
@@ -853,6 +1154,7 @@ form .btn {
     padding: 0 0 0 50px;
   }
   .main-home .section-center {
+    width: 91.5%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -862,9 +1164,11 @@ form .btn {
             flex-direction: column-reverse;
   }
   .main-home .section-center .section-center-left {
-    margin: 0 60px 0 35px;
+    width: 95%;
+    margin: 0px 50px;
   }
   .main-home .section-center .section-center-right {
+    width: 95%;
     margin-left: 50px;
   }
   .main-home .section-center .section-center-right img {
@@ -895,6 +1199,11 @@ form .btn {
     display: -ms-flexbox;
     display: flex;
   }
+  .main-home .section-bottom .section-bottom-bottom p {
+    margin: 0px 50px;
+    text-align: center;
+    font-size: 15px;
+  }
   .main-home .section-bottom .section-bottom-bottom .section-bottom-bottom-logo {
     width: 100%;
     display: -webkit-box;
@@ -915,12 +1224,19 @@ form .btn {
   }
 }
 @media (min-width: 320px) and (max-width: 480px) {
+  body {
+    width: 100%;
+  }
+  body p {
+    font-size: 13px;
+  }
   .nav {
     position: sticky;
     top: 0;
     bottom: 10px;
     background: white;
     text-transform: uppercase;
+    width: 100%;
     height: 7vh;
   }
   .nav .nav-left img {
@@ -957,15 +1273,19 @@ form .btn {
             flex-direction: column;
   }
   .section-top .section-top-left {
-    margin-right: 50px;
+    width: 84%;
+    margin: 0px 30px;
   }
   .section-top .section-top-left img {
     width: 100%;
   }
   .section-top .section-top-right {
-    padding: 0 0 0 50px;
+    width: 84%;
+    margin: 0px 30px;
   }
   .section-center {
+    width: 88%;
+    margin-top: 30px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -975,10 +1295,12 @@ form .btn {
             flex-direction: column-reverse;
   }
   .section-center .section-center-left {
-    margin: 0 60px 0 35px;
+    width: 95%;
+    margin: 0px 30px;
   }
   .section-center .section-center-right {
-    margin-left: 50px;
+    width: 95%;
+    margin-left: 30px;
   }
   .section-center .section-center-right img {
     width: 100%;
@@ -986,10 +1308,18 @@ form .btn {
   .section-bottom {
     width: 100%;
   }
+  .section-bottom .section-bottom-bottom h2 {
+    margin: 0px 30px;
+    text-align: center;
+  }
   .section-bottom .section-bottom-bottom p {
-    width: 80%;
+    margin: 0px 30px;
+    text-align: center;
+    font-size: 13px;
   }
   .section-bottom .section-bottom-top-img {
+    width: 100%;
+    margin: 0px 30px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1021,6 +1351,33 @@ form .btn {
   .section-bottom .section-bottom-bottom-logo img {
     width: 30%;
   }
+  .footer {
+    margin-top: 30px;
+  }
+  .footer .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 0px;
+    padding: 30px;
+  }
+  .footer .footer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-decoration: none;
+    list-style: none;
+  }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .nav {
@@ -1030,6 +1387,7 @@ form .btn {
     bottom: 30px;
     background: white;
     text-transform: uppercase;
+    width: 100%;
     height: 10vh;
   }
   .nav .nav-left img {
@@ -1103,10 +1461,8 @@ form .btn {
     font-size: 15px;
   }
   .footer .footer {
+    width: 100%;
     margin-top: 0px;
-  }
-  .footer .footer ul {
-    font-size: 17px;
   }
 }
 @media (min-width: 320px) and (max-width: 480px) {
@@ -1117,6 +1473,7 @@ form .btn {
     bottom: 30px;
     background: white;
     text-transform: uppercase;
+    width: 100%;
     height: 10vh;
   }
   .nav .nav-left img {
@@ -1195,8 +1552,20 @@ form .btn {
   .club .card-club .card .title p {
     font-size: 13px;
   }
+  .footer .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 0px;
+    padding: 30px;
+  }
   .footer .footer ul {
-    font-size: 15px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1204,8 +1573,6 @@ form .btn {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 3px;
-    margin: 0px;
     text-decoration: none;
     list-style: none;
   }
