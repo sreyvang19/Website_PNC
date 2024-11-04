@@ -5,6 +5,11 @@
   font-family: sans-serif;
 }
 
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 .nav {
   width: 100%;
   position: sticky;
